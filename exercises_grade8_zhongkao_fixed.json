@@ -1,0 +1,1570 @@
+[
+  {
+    "id": "g8_001",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Although she enjoys watching movies, her true passion is for live ______ on stage. (act)",
+    "correct_answers": [
+      "ACTS"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_002",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The company decided to place an ______ in the local newspaper to attract more customers. (advertise)",
+    "correct_answers": [
+      "ADVERTISEMENT"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_003",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Many companies spend a lot of money on online ______ to promote their products. (advertise)",
+    "correct_answers": [
+      "ADVERTISING"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_004",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The story was written so ______ that it felt like a tale from thousands of years ago. (ancient)",
+    "correct_answers": [
+      "ANCIENTLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_005",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "If you find a lost wallet, you should try to return it to ______ owner as soon as possible. (anybody)",
+    "correct_answers": [
+      "ANYBODY'S"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_006",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The head teacher asked the new ______ to prepare the meeting room for the parents. (assist)",
+    "correct_answers": [
+      "ASSISTANT"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_007",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The main ______ of the new amusement park is the giant roller coaster. (attract)",
+    "correct_answers": [
+      "ATTRACTION"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_008",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Under the microscope, we observed a single ______ moving slowly in the water sample. (bacteria)",
+    "correct_answers": [
+      "BACTERIUM"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_009",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "After losing some weight, his old jeans looked even ______ than before, so he decided to buy a new pair. (baggy)",
+    "correct_answers": [
+      "BAGGIER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_010",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Many modern devices, such as smartphones and laptops, require rechargeable ______ to function properly. (battery)",
+    "correct_answers": [
+      "BATTERIES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_011",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The old man's hands were thin and ______, showing his age clearly. (bone)",
+    "correct_answers": [
+      "BONY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_012",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Due to the heavy rain, the school announced the ______ of the outdoor sports meeting. (cancel)",
+    "correct_answers": [
+      "CANCELLATION"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_013",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The bank teller usually ______ all the checks before the end of the business day. (cash)",
+    "correct_answers": [
+      "CASHES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_014",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The weather in spring can change ______, so it's wise to carry an umbrella with you. (changeable)",
+    "correct_answers": [
+      "CHANGEABLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_015",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The blue shirt is only $15, but the red one is even ______ than that. (cheap)",
+    "correct_answers": [
+      "CHEAPER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_016",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The children sang ______ as they walked through the park on the sunny morning. (cheerful)",
+    "correct_answers": [
+      "CHEERFULLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_017",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The teacher's explanation of the grammar rule only ______ the students even more. (confuse)",
+    "correct_answers": [
+      "CONFUSED"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_018",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "In the horror movie, the zombies looked even ______ after the special effects were added. (dead)",
+    "correct_answers": [
+      "DEADER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_019",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The company has already ______ with the urgent issue, so we can focus on other tasks now. (deal)",
+    "correct_answers": [
+      "DEALT"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_020",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The silence in the old house was so complete and ______ that it made everyone feel uneasy. (death)",
+    "correct_answers": [
+      "DEATHLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_021",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The Christmas tree looked beautiful with all the ______ lights shining brightly in the living room. (decorate)",
+    "correct_answers": [
+      "DECORATIVE"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_022",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The earthquake caused great ______ to the city, leaving many buildings in ruins. (destroy)",
+    "correct_answers": [
+      "DESTRUCTION"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_023",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The archaeologists have already ______ several ancient artifacts from this historical site. (dig)",
+    "correct_answers": [
+      "DUG"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_024",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The heavy rain caused a ______ flood that destroyed many homes in the village. (disaster)",
+    "correct_answers": [
+      "DISASTROUS"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_025",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The scientist's latest ______ of a new species in the rainforest amazed the world. (discover)",
+    "correct_answers": [
+      "DISCOVERY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_026",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The school organized a charity event and encouraged everyone to make a ______ to help children in need. (donate)",
+    "correct_answers": [
+      "DONATION"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_027",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The teacher looked at the student's messy homework ______ before asking him to explain. (doubtful)",
+    "correct_answers": [
+      "DOUBTFULLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_028",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The weather changed in a very ______ way, from sunny to stormy in just minutes. (drama)",
+    "correct_answers": [
+      "DRAMATIC"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_029",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "In Chinese history, many ______ ruled the country for hundreds of years. (dynasty)",
+    "correct_answers": [
+      "DYNASTIES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_030",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The sun rises in the ______ part of the country much earlier than in the west. (east)",
+    "correct_answers": [
+      "EASTERN"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_031",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The government is trying to find an ______ solution to reduce the cost of living for families. (economy)",
+    "correct_answers": [
+      "ECONOMIC"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_032",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Different countries have different economic systems, and their ______ vary greatly in terms of development. (economy)",
+    "correct_answers": [
+      "ECONOMIES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_033",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Nowadays, many people prefer to pay for their purchases ______ rather than using cash. (electronic)",
+    "correct_answers": [
+      "ELECTRONICALLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_034",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The final ______ will cover all the topics we have learned this semester. (exam)",
+    "correct_answers": [
+      "EXAMINATION"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_035",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "My little brother is very ______, always jumping up and down at the smallest surprise. (excite)",
+    "correct_answers": [
+      "EXCITABLE"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_036",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "We didn't ______ such a heavy rain, so we got completely wet on our way home. (expect)",
+    "correct_answers": [
+      "EXPECT"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_037",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "She always dresses ______, which makes her stand out in any crowd. (fashionable)",
+    "correct_answers": [
+      "FASHIONABLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_038",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "To manage your budget more ______, you should keep a record of daily expenses. (financial)",
+    "correct_answers": [
+      "FINANCIALLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_039",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "My brother always ______ his homework before dinner, which is a good habit. (finish)",
+    "correct_answers": [
+      "FINISHES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_040",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "After doing regular exercise for months, my muscles became much ______ than before. (firm)",
+    "correct_answers": [
+      "FIRMER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_041",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The manager answered the reporter's question ______, avoiding any direct commitment. (guard)",
+    "correct_answers": [
+      "GUARDEDLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_042",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Reading before bed is a good ______ that helps many people relax and sleep better. (habit)",
+    "correct_answers": [
+      "HABIT"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_043",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "After the exhibition, the artist's paintings were ______ on the walls of the museum for everyone to admire. (hang)",
+    "correct_answers": [
+      "HUNG"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_044",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The choir performed several beautiful ______ during the concert last night. (harmony)",
+    "correct_answers": [
+      "HARMONIES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_045",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The doctor explained that some ______ can be prevented by maintaining a healthy lifestyle. (ill)",
+    "correct_answers": [
+      "ILLNESSES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_046",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The new telescope is equipped with a high-resolution ______ that can capture distant galaxies clearly. (image)",
+    "correct_answers": [
+      "IMAGER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_047",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Although she is only twelve, she can already manage her daily tasks quite ______. (independent)",
+    "correct_answers": [
+      "INDEPENDENTLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_048",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "As a famous online ______, she has the power to change people's shopping habits. (influence)",
+    "correct_answers": [
+      "INFLUENCER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_049",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The doctor said that the new treatment usually ______ the patient within a few days. (injure)",
+    "correct_answers": [
+      "INJURES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_050",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The football player suffered several minor ______ during the intense match last Saturday. (injure)",
+    "correct_answers": [
+      "INJURIES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_051",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The scientist carefully checked the ______ of the experiment to ensure accurate results. (instrument)",
+    "correct_answers": [
+      "INSTRUMENTS"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_052",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The teacher explained the complex theory ______, making it easy for everyone to understand. (interest)",
+    "correct_answers": [
+      "INTERESTINGLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_053",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "In the comedy club, everyone laughed at the ______ who told the funniest story. (joke)",
+    "correct_answers": [
+      "JOKER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_054",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The chef carefully sharpened all the kitchen ______ before starting to prepare the meal. (knife)",
+    "correct_answers": [
+      "KNIVES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_055",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The teacher asked the students to ______ their books on the desk before the test began. (lie)",
+    "correct_answers": [
+      "LAY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_056",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The magician waved his wand and the rabbit disappeared ______ in front of the audience. (magic)",
+    "correct_answers": [
+      "MAGICALLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_057",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The doctor explained that the patient's fever was likely caused by a ______ infection. (malaria)",
+    "correct_answers": [
+      "MALARIAL"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_058",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The pianist's ______ performance left the entire audience in awe and admiration. (master)",
+    "correct_answers": [
+      "MASTERFUL"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_059",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The new policy didn't change the situation ______, but it was a good first step. (material)",
+    "correct_answers": [
+      "MATERIALLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_060",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The patient recovered quickly, thanks to the ______ advanced treatment he received. (medical)",
+    "correct_answers": [
+      "MEDICALLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_061",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "My little brother always makes ______ in his room, so I have to help him clean up every weekend. (mess)",
+    "correct_answers": [
+      "MESSES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_062",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The car missed the pedestrian by a ______ margin, which was quite a scary moment. (narrow)",
+    "correct_answers": [
+      "NARROW"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_063",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Before going camping, we need to pack all the ______ for cooking and sleeping. (necessary)",
+    "correct_answers": [
+      "NECESSITIES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_064",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The two friends argued over whose toy it was, but in fact it was ______ because they had bought it together. (neither)",
+    "correct_answers": [
+      "NEITHER'S"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_065",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "We usually have lunch at school, but today we ate at home ______ because of the heavy rain. (normal)",
+    "correct_answers": [
+      "NORMALLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_066",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "After the old house was torn down, there was a strange feeling of ______ left in the empty lot. (nothing)",
+    "correct_answers": [
+      "NOTHINGNESS"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_067",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "My sister loves reading so much that she dreams of becoming a famous ______ one day. (novel)",
+    "correct_answers": [
+      "NOVELIST"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_068",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "My uncle is a talented ______ who has held several exhibitions in the city. (paint)",
+    "correct_answers": [
+      "PAINTER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_069",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The doctor carefully examined the patient's medical ______ to understand the illness better. (path)",
+    "correct_answers": [
+      "PATH"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_070",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The company requires that all employees receive their monthly ______ on time. (pay)",
+    "correct_answers": [
+      "PAY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_071",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The children played together ______ in the park all afternoon without any arguments. (peace)",
+    "correct_answers": [
+      "PEACEFULLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_072",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The museum's collection includes various ancient ______ from different dynasties. (pottery)",
+    "correct_answers": [
+      "POTTERY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_073",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The river flows ______ after the heavy rain, so we need to be careful when crossing it. (rapid)",
+    "correct_answers": [
+      "RAPIDLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_074",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The river flowed ______ after the heavy rain, making it dangerous to cross. (rapidly)",
+    "correct_answers": [
+      "RAPID"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_075",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "After a long day at work, my father usually ______ by watching his favorite TV shows. (relax)",
+    "correct_answers": [
+      "RELAXES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_076",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "As team leaders, we should understand our own ______ clearly to ensure the project runs smoothly. (responsibility)",
+    "correct_answers": [
+      "RESPONSIBILITIES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_077",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "As a team leader, you should make decisions ______ and consider everyone's opinion. (responsible)",
+    "correct_answers": [
+      "RESPONSIBLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_078",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The sun began to ______ slowly above the horizon, painting the sky with beautiful colors. (rise)",
+    "correct_answers": [
+      "RISE"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_079",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The company sent us a free ______ of their new coffee to try before buying a whole bag. (sample)",
+    "correct_answers": [
+      "SAMPLE"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_080",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "My grandfather often shares a wise ______ that helps me understand life better. (say)",
+    "correct_answers": [
+      "SAYING"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_081",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The sudden loud noise in the dark forest was quite ______ for the young campers. (scare)",
+    "correct_answers": [
+      "SCARY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_082",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The famous artist is known as a great sculptor, but his wife is also a talented ______. (sculptor)",
+    "correct_answers": [
+      "SCULPTRESS"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_083",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "During the summer holiday, many families enjoy spending time by the ______ to relax and swim. (sea)",
+    "correct_answers": [
+      "SEA"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_084",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The teacher looked at the student ______ when he gave a wrong answer in class. (serious)",
+    "correct_answers": [
+      "SERIOUSLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_085",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The two sisters look alike, but they behave quite ______ in social situations. (similar)",
+    "correct_answers": [
+      "SIMILARLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_086",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "In our history class, we learned that Karl Marx was one of the most influential ______ thinkers in the world. (social)",
+    "correct_answers": [
+      "SOCIALIST"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_087",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "Different ______ around the world have their own unique traditions and ways of life. (society)",
+    "correct_answers": [
+      "SOCIETIES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_088",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "In the wild, animals need strong instincts for ______ in harsh environments. (survive)",
+    "correct_answers": [
+      "SURVIVAL"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_089",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The weather was ______ cold last night, so we decided to stay indoors. (terrible)",
+    "correct_answers": [
+      "TERRIBLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_090",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The ______ number of students in our school has increased by fifty this year. (total)",
+    "correct_answers": [
+      "TOTAL"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_091",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "My uncle is a successful international ______ who often travels between Asia and Europe. (trade)",
+    "correct_answers": [
+      "TRADER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_092",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The teacher explained the concept so ______ that all the students understood it immediately. (value)",
+    "correct_answers": [
+      "VALUABLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_093",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The author described the beautiful sunset so ______ that I could almost see it in my mind. (vivid)",
+    "correct_answers": [
+      "VIVIDLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_094",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The weather forecast says a ______ wind will bring cooler air to our city tomorrow. (west)",
+    "correct_answers": [
+      "WESTERLY"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_095",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "The manager said there was ______ evidence to support the employee's claim, so the case was closed. (whatever)",
+    "correct_answers": [
+      "WHATEVER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_096",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "In the early days of the automobile, a skilled driver was often called a ______ because of their control over the steering wheel. (wheel)",
+    "correct_answers": [
+      "WHEELER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_097",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "In old poems, you might see the word ______ used instead of 'whenever' to fit the rhythm. (whenever)",
+    "correct_answers": [
+      "WHENEVER"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "g8_098",
+    "type": "word_transformation",
+    "section": "grade8",
+    "difficulty": "medium",
+    "context": "In the group project, you should all rely on ______ to complete your own tasks. (yourself)",
+    "correct_answers": [
+      "YOURSELVES"
+    ],
+    "is_vocab": [
+      true
+    ],
+    "vocab_count": 1,
+    "blanks_count": 1,
+    "created_at": "2026-03-31T12:00:00.000Z"
+  }
+]
