@@ -4,9 +4,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "Although she enjoys watching movies, her true passion is for live ______ on stage. (act)",
+    "context": "The government has just announced a new ______ on education reform. (act)",
     "correct_answers": [
-      "ACT"
+      "ACTION"
     ],
     "is_vocab": [
       true
