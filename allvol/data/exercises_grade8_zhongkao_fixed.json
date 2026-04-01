@@ -1172,9 +1172,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The river became ______ after the heavy rain, making it dangerous to cross. (rapid)",
+    "context": "The river flowed very ______ after the heavy rain. (rapid)",
     "correct_answers": [
-      "RAPID"
+      "RAPIDLY"
     ],
     "is_vocab": [
       true
