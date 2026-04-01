@@ -68,9 +68,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "If you find a lost wallet, you should try to return it to ______ owner as soon as possible. (anybody)",
+    "context": "If you find a lost wallet, you should try to return it to the owner as soon as possible. (anybody)",
     "correct_answers": [
-      "ANYBODY'S"
+      "OWNER"
     ],
     "is_vocab": [
       true
@@ -566,7 +566,7 @@
     "difficulty": "medium",
     "context": "We didn't ______ such a heavy rain, so we got completely wet on our way home. (expect)",
     "correct_answers": [
-      "EXPECT"
+      "EXPECTED"
     ],
     "is_vocab": [
       true
@@ -662,7 +662,7 @@
     "difficulty": "medium",
     "context": "Reading before bed is a good ______ that helps many people relax and sleep better. (habit)",
     "correct_answers": [
-      "HABIT"
+      "HABITS"
     ],
     "is_vocab": [
       true
@@ -982,7 +982,7 @@
     "difficulty": "medium",
     "context": "The car missed the pedestrian by a ______ margin, which was quite a scary moment. (narrow)",
     "correct_answers": [
-      "NARROW"
+      "NARROWER"
     ],
     "is_vocab": [
       true
@@ -1094,7 +1094,7 @@
     "difficulty": "medium",
     "context": "The doctor carefully examined the patient's medical ______ to understand the illness better. (path)",
     "correct_answers": [
-      "PATH"
+      "PATHS"
     ],
     "is_vocab": [
       true
@@ -1110,7 +1110,7 @@
     "difficulty": "medium",
     "context": "The company requires that all employees receive their monthly ______ on time. (pay)",
     "correct_answers": [
-      "PAY"
+      "PAYMENT"
     ],
     "is_vocab": [
       true
@@ -1142,7 +1142,7 @@
     "difficulty": "medium",
     "context": "The museum's collection includes various ancient ______ from different dynasties. (pottery)",
     "correct_answers": [
-      "POTTERY"
+      "POTTERIES"
     ],
     "is_vocab": [
       true
@@ -1238,7 +1238,7 @@
     "difficulty": "medium",
     "context": "The sun began to ______ slowly above the horizon, painting the sky with beautiful colors. (rise)",
     "correct_answers": [
-      "RISE"
+      "ROSE"
     ],
     "is_vocab": [
       true
@@ -1254,7 +1254,7 @@
     "difficulty": "medium",
     "context": "The company sent us a free ______ of their new coffee to try before buying a whole bag. (sample)",
     "correct_answers": [
-      "SAMPLE"
+      "SAMPLES"
     ],
     "is_vocab": [
       true
@@ -1318,7 +1318,7 @@
     "difficulty": "medium",
     "context": "During the summer holiday, many families enjoy spending time by the ______ to relax and swim. (sea)",
     "correct_answers": [
-      "SEA"
+      "SEAS"
     ],
     "is_vocab": [
       true
@@ -1430,7 +1430,7 @@
     "difficulty": "medium",
     "context": "The ______ number of students in our school has increased by fifty this year. (total)",
     "correct_answers": [
-      "TOTAL"
+      "TOTALED"
     ],
     "is_vocab": [
       true
