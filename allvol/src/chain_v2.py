@@ -198,11 +198,11 @@ if __name__ == "__main__":
     # 示例：使用自动重试生成器
     from langchain.llms import OpenAI
 
-    # 初始化 - ZenMux AI (DeepSeek 兼容接口)
+    # 初始化 - DeepSeek
     llm = OpenAI(
         temperature=0.7,
-        openai_api_key="sk-ss-v1-2e83ce9d273c15056b5c39bf95027189eb08e8b5d7ef9552e454853ac5d59449",
-        openai_api_base="https://zenmux.ai/api/v1"
+        openai_api_key="sk-xxx",  # 替换为你的 DeepSeek API Key
+        openai_api_base="https://api.deepseek.com/v1"
     )
     generator = ExerciseGenerator(llm)
 
