@@ -660,7 +660,7 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "Reading before bed is a good ______ that helps many people relax and sleep better. (habit)",
+    "context": "Reading before bed is one of the best ______ that helps many people relax and sleep better. (habit)",
     "correct_answers": [
       "HABITS"
     ],
