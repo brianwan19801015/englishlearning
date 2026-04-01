@@ -212,9 +212,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The weather in spring can change ______, so it's wise to carry an umbrella with you. (changeable)",
+    "context": "The weather in spring is very ______, so it's wise to carry an umbrella with you. (changeable)",
     "correct_answers": [
-      "CHANGEABLY"
+      "CHANGEABLE"
     ],
     "is_vocab": [
       true
