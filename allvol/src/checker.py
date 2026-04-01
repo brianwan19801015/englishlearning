@@ -2,15 +2,38 @@
 """
 练习题质量校验器
 检查生成的题目是否有语法错误、逻辑问题、词性转换错误
+支持规则检查 + LLM 语义检查
 """
 
 import json
 import re
+import requests
 from typing import List, Dict, Any
 
+
 class ExerciseChecker:
-    def __init__(self):
+    # ZenMux AI 配置
+    ZENMUX_BASE_URL = "https://zenmux.ai/api/v1"
+    ZENMUX_API_KEY = "sk-ss-v1-2e83ce9d273c15056b5c39bf95027189eb08e8b5d7ef9552e454853ac5d59449"
+    ZENMUX_MODEL = "openai/gpt-4o"
+
+    def __init__(self, use_llm: bool = True):
+        """初始化校验器
+        
+        Args:
+            use_llm: 是否使用 LLM 进行语义检查（默认 True）
+        """
         self.issues = []
+        self.use_llm = use_llm
+        self.llm_session = None
+        
+        # 初始化 HTTP 会话
+        if use_llm:
+            self.llm_session = requests.Session()
+            self.llm_session.headers.update({
+                "Authorization": f"Bearer {self.ZENMUX_API_KEY}",
+                "Content-Type": "application/json"
+            })
 
     def check_exercise(self, exercise: Dict[str, Any]) -> List[Dict]:
         """检查单道题目"""
@@ -34,7 +57,59 @@ class ExerciseChecker:
         # 5. 检查填空位置上下文
         issues.extend(self._check_blank_context(context, answer, hint))
 
+        # 6. 如果规则检查通过，用 LLM 做语义检查
+        if not issues and self.llm_session:
+            llm_issues = self._check_semantics_llm(context, answer, hint)
+            issues.extend(llm_issues)
+
         return issues
+
+    def _check_semantics_llm(self, context: str, answer: str, hint: str) -> List[Dict]:
+        """用 LLM 检查语义合理性（作为初中英语老师）"""
+        if not self.llm_session:
+            return []
+
+        prompt = f"""作为初中英语老师，检查这道词性转换练习题是否合理：
+
+句子：{context}
+提示词：{hint}
+答案：{answer}
+
+请从以下角度检查：
+1. 语法是否正确
+2. 语义是否通顺自然
+3. 是否符合中考考点
+4. 答案填入后句子是否合理
+
+如果有问题，请指出具体问题。
+如果没问题，请回答"通过"。
+"""
+
+        try:
+            response = self.llm_session.post(
+                f"{self.ZENMUX_BASE_URL}/chat/completions",
+                json={
+                    "model": self.ZENMUX_MODEL,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0.3
+                },
+                timeout=30
+            )
+            result = response.json()
+            content = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+
+            # 如果 LLM 说有问题
+            if content != "通过" and "通过" not in content:
+                return [{
+                    'type': 'llm_semantic_issue',
+                    'message': f'LLM 语义检查: {content}',
+                    'suggestion': '请调整句子或答案'
+                }]
+        except Exception as e:
+            # LLM 调用失败不影响主流程
+            print(f"LLM 检查调用失败: {e}")
+
+        return []
 
     def _extract_hint(self, context: str) -> str:
         """提取括号内的提示词"""
