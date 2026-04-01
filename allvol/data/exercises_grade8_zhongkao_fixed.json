@@ -212,9 +212,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The weather in spring is very ______, so it's wise to carry an umbrella with you. (changeable)",
+    "context": "The weather in spring can change ______, so it's wise to carry an umbrella with you. (changeable)",
     "correct_answers": [
-      "CHANGEABLE"
+      "CHANGEABLY"
     ],
     "is_vocab": [
       true
@@ -324,9 +324,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The Christmas tree looked beautiful with all the ______ lights shining brightly in the living room. (decorate)",
+    "context": "The Christmas tree looked very beautiful with colorful ______. (decorate)",
     "correct_answers": [
-      "DECORATIVE"
+      "DECORATIONS"
     ],
     "is_vocab": [
       true
@@ -548,9 +548,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "My little brother is very ______, always jumping up and down at the smallest surprise. (excite)",
+    "context": "My little brother was very ______ when he got the gift. (excite)",
     "correct_answers": [
-      "EXCITABLE"
+      "EXCITED"
     ],
     "is_vocab": [
       true

@@ -150,6 +150,80 @@ class ExerciseChecker:
                 'suggestion': '词性转换必须有拼写变化，如加后缀或不规则变化'
             })
 
+        # 检查是否是常见的中考词性转换
+        common_transformations = [
+            # 动词→名词
+            ('act', 'ACTION'), ('assist', 'ASSISTANT'), ('advertise', 'ADVERTISEMENT'),
+            ('cancel', 'CANCELLATION'), ('decide', 'DECISION'), ('describe', 'DESCRIPTION'),
+            ('destroy', 'DESTRUCTION'), ('discover', 'DISCOVERY'), ('donate', 'DONATION'),
+            ('explain', 'EXPLANATION'), ('improve', 'IMPROVEMENT'), ('invite', 'INVITATION'),
+            ('judge', 'JUDGMENT'), ('manage', 'MANAGEMENT'), ('measure', 'MEASUREMENT'),
+            ('move', 'MOVEMENT'), ('agree', 'AGREEMENT'), ('amuse', 'AMUSEMENT'),
+            ('achieve', 'ACHIEVEMENT'), ('excite', 'EXCITEMENT'), ('attract', 'ATTRACTION'),
+            ('instruct', 'INSTRUCTION'), ('construct', 'CONSTRUCTION'), ('produce', 'PRODUCTION'),
+            ('introduce', 'INTRODUCTION'), ('educate', 'EDUCATION'), ('celebrate', 'CELEBRATION'),
+            ('pollute', 'POLLUTION'), ('operate', 'OPERATION'), ('organize', 'ORGANIZATION'),
+            ('translate', 'TRANSLATION'), ('communicate', 'COMMUNICATION'),
+            # 动词→形容词（过去分词）
+            ('excite', 'EXCITED'), ('interest', 'INTERESTED'), ('surprise', 'SURPRISED'),
+            ('worry', 'WORRIED'), ('tire', 'TIRED'), ('amuse', 'AMUSED'),
+            ('confuse', 'CONFUSED'), ('frighten', 'FRIGHTENED'), ('bore', 'BORED'),
+            # 动词→副词（加-ly）
+            ('rapid', 'RAPIDLY'), ('sudden', 'SUDDENLY'), ('careful', 'CAREFULLY'),
+            ('usual', 'USUALLY'), ('final', 'FINALLY'), ('real', 'REALLY'),
+            ('polite', 'POLITELY'), ('safe', 'SAFELY'), ('easy', 'EASILY'),
+            ('happy', 'HAPPILY'), ('angry', 'ANGRILY'), ('heavy', 'HEAVILY'),
+            ('noisy', 'NOISILY'), ('careless', 'CARELESSLY'), ('necessary', 'NECESSARILY'),
+            ('possible', 'POSSIBLY'), ('probable', 'PROBABLY'), ('complete', 'COMPLETELY'),
+            ('exact', 'EXACTLY'), ('serious', 'SERIOUSLY'), ('beautiful', 'BEAUTIFULLY'),
+            ('careful', 'CAREFULLY'), ('wonderful', 'WONDERFULLY'), ('meaningful', 'MEANINGFULLY'),
+            ('cheerful', 'CHEERFULLY'), ('changeable', 'CHANGEABLY'), ('dramatic', 'DRAMATICALLY'),
+            ('economic', 'ECONOMICALLY'), ('medical', 'MEDICALLY'), ('financial', 'FINANCIALLY'),
+            # 形容词→比较级/最高级
+            ('happy', 'HAPPIER'), ('happy', 'HAPPIEST'), ('big', 'BIGGER'), ('big', 'BIGGEST'),
+            ('thin', 'THINNER'), ('thin', 'THINNEST'), ('hot', 'HOTTER'), ('hot', 'HOTTEST'),
+            ('clever', 'CLEVERER'), ('clever', 'CLEVEREST'), ('friendly', 'FRIENDLIER'),
+            ('friendly', 'FRIENDLIEST'), ('easy', 'EASIER'), ('easy', 'EASIEST'),
+            ('difficult', 'MORE DIFFICULT'), ('beautiful', 'MORE BEAUTIFUL'),
+            ('interesting', 'MORE INTERESTING'), ('important', 'MORE IMPORTANT'),
+            ('expensive', 'MORE EXPENSIVE'), ('crowded', 'MORE CROWDED'),
+            # 动词→过去式/过去分词（不规则）
+            ('deal', 'DEALT'), ('dig', 'DUG'), ('rise', 'ROSE'), ('pay', 'PAID'),
+            ('say', 'SAID'), ('find', 'FOUND'), ('get', 'GOT'), ('give', 'GIVEN'),
+            ('make', 'MADE'), ('take', 'TOOK'), ('come', 'CAME'), ('become', 'BECOME'),
+            ('become', 'BECAME'), ('build', 'BUILT'), ('buy', 'BOUGHT'), ('catch', 'CAUGHT'),
+            ('teach', 'TAUGHT'), ('think', 'THOUGHT'), ('bring', 'BROUGHT'), ('fight', 'FOUGHT'),
+            # 名词→复数
+            ('battery', 'BATTERIES'), ('harmony', 'HARMONIES'), ('injury', 'INJURIES'),
+            ('knife', 'KNIVES'), ('mess', 'MESSES'), ('society', 'SOCIETIES'),
+            ('dynasty', 'DYNASTIES'), ('economy', 'ECONOMIES'), ('ability', 'ABILITIES'),
+            ('bacteria', 'BACTERIA'), ('pottery', 'POTTERIES'), ('responsibility', 'RESPONSIBILITIES'),
+            ('family', 'FAMILIES'), ('dictionary', 'DICTIONARIES'), ('activity', 'ACTIVITIES'),
+            ('possibility', 'POSSIBILITIES'), ('nationality', 'NATIONALITIES'),
+            # 名词→形容词
+            ('tradition', 'TRADITIONAL'), ('music', 'MUSICAL'), ('nature', 'NATURAL'),
+            ('culture', 'CULTURAL'), ('history', 'HISTORICAL'), ('science', 'SCIENTIFIC'),
+            ('education', 'EDUCATIONAL'), ('medicine', 'MEDICAL'), ('industry', 'INDUSTRIAL'),
+            ('politics', 'POLITICAL'), ('economy', 'ECONOMIC'), ('geography', 'GEOGRAPHICAL'),
+            ('social', 'SOCIALIST'), ('decoration', 'DECORATIVE'), ('disaster', 'DISASTROUS'),
+        ]
+
+        # 检查是否在常见转换列表中
+        is_common = (hint.lower(), answer.upper()) in common_transformations
+
+        # 如果不在常见列表中，可能是生僻词
+        if not is_common and hint_upper != answer_upper:
+            # 但如果是规则变化（加后缀），可能是可以的
+            common_suffixes = ['LY', 'ER', 'EST', 'ION', 'MENT', 'TION', 'NESS', 'S', 'ES', 'ED', 'ING', 'ABLE', 'IBLE']
+            has_common_suffix = any(answer_upper.endswith(suffix) for suffix in common_suffixes)
+
+            if not has_common_suffix:
+                issues.append({
+                    'type': 'uncommon_transformation',
+                    'message': f'"{hint}" → "{answer}" 可能不是常见的中考词性转换',
+                    'suggestion': '建议使用更常见的中考词汇转换，如：act→ACTION, happy→HAPPILY'
+                })
+
         return issues
 
     def _check_possessive(self, context: str, answer: str, hint: str) -> List[Dict]:
