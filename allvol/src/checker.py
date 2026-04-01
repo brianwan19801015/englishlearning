@@ -175,7 +175,15 @@ class ExerciseChecker:
                         exercise['context'] = fixed['context']
                     if 'correct_answers' in fixed:
                         exercise['correct_answers'] = fixed['correct_answers'] if isinstance(fixed['correct_answers'], list) else [fixed['correct_answers']]
-                    print(f"✅ 已修复: {exercise.get('id')}")
+                    
+                    # 🔥 修复后重新检查
+                    print(f"  🔍 修复后重新检查...")
+                    recheck_issues = self.check_exercise(exercise)
+                    if recheck_issues:
+                        print(f"  ⚠️ 修复后仍有问题: {[i['type'] for i in recheck_issues]}")
+                    else:
+                        print(f"  ✅ 修复后检查通过!")
+                    
                     return exercise
             except:
                 pass
