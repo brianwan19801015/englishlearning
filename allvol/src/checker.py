@@ -31,6 +31,9 @@ class ExerciseChecker:
         # 4. 检查所有格用法
         issues.extend(self._check_possessive(context, answer, hint))
 
+        # 5. 检查填空位置上下文
+        issues.extend(self._check_blank_context(context, answer, hint))
+
         return issues
 
     def _extract_hint(self, context: str) -> str:
@@ -169,6 +172,58 @@ class ExerciseChecker:
                         'message': f'______ owner 填所有格 "{answer}" 通常不正确',
                         'suggestion': '考虑使用定冠词 "the" 或物主代词 "its/his/her"'
                     })
+
+        return issues
+
+    def _check_blank_context(self, context: str, answer: str, hint: str) -> List[Dict]:
+        """检查填空位置的上下文是否合理"""
+        issues = []
+
+        # 首先检查填空是否存在
+        if '______' not in context:
+            issues.append({
+                'type': 'missing_blank',
+                'message': '句子中没有找到填空标记 "______"',
+                'suggestion': '请确保句子中有填空标记 "______"'
+            })
+            return issues
+
+        # 提取填空前后的内容
+        blank_pos = context.find('______')
+
+        before_blank = context[:blank_pos].strip().lower()
+        after_blank = context[blank_pos + 6:].strip().lower()
+
+        # 1. 检查填空前后是否已有完整内容（填空是多余的情况）
+        # 例如："to the owner" 已经有内容，填空在 "owner" 位置就不合理
+        before_words = before_blank.split()
+        after_words = after_blank.split()
+
+        # 如果填空前后都是完整的短语/单词，可能是冗余填空
+        if len(before_words) >= 2 and len(after_words) >= 1:
+            # 检查是否是 "to the + 名词" 结构
+            if ' '.join(before_words[-2:]) == 'to the':
+                issues.append({
+                    'type': 'redundant_blank',
+                    'message': '填空位置前已有 "to the"，填空可能多余或位置错误',
+                    'suggestion': '考虑调整句子结构，如 "return it to ______" 或 "return ______ to the owner"'
+                })
+
+        # 2. 检查答案是否在句子里已经出现过
+        if answer.lower() in context.lower():
+            issues.append({
+                'type': 'answer_in_context',
+                'message': f'答案 "{answer}" 已在句子中出现，填空无意义',
+                'suggestion': '填空位置应该是一个需要填写的空缺，而不是已存在的内容'
+            })
+
+        # 3. 检查答案是否是原词（填空无意义的情况）
+        if answer.lower() == hint.lower():
+            issues.append({
+                'type': 'same_as_hint',
+                'message': f'答案 "{answer}" 与提示词 "{hint}" 相同，词性转换无意义',
+                'suggestion': '答案必须有形态变化，如加后缀或变形'
+            })
 
         return issues
 

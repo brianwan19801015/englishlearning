@@ -68,9 +68,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "If you find a lost wallet, you should try to return it to the owner as soon as possible. (anybody)",
+    "context": "If you ______ a lost wallet, you should try to return it to the owner as soon as possible. (find)",
     "correct_answers": [
-      "OWNER"
+      "FOUND"
     ],
     "is_vocab": [
       true
