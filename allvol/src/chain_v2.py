@@ -1,16 +1,27 @@
 """
-LangChain Prompt 模板 - 中考英语词性转换题生成
+LangChain Prompt 模板 -中考英语词性转换题生成
 
 优化点：
 1. 明确指定括号内是"源词"（动词原形/形容词原级）
 2. 明确指定答案的词性类型
 3. 添加语法检查规则
 4. Few-shot 示例展示正确格式
+5. 集成自动校验（Checker）
 """
+
+import json
+import re
+from typing import List, Dict, Any
 
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.llms import OpenAI
+
+# 导入校验器
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from checker import ExerciseChecker
 
 # ============================================
 # 核心 Prompt 模板
@@ -183,11 +194,84 @@ validation_prompt = PromptTemplate(
 if __name__ == "__main__":
     # 示例词汇列表
     word_list = """act, advertise, cancel, cheap, cheerful, deal, death, destroy, discover, donate"""
-    
+
     # 创建 Chain
     llm = OpenAI(temperature=0.7)
     chain = LLMChain(llm=llm, prompt=word_transformation_prompt)
-    
+
     # 生成题目
     result = chain.run(word_list=word_list)
     print(result)
+
+
+# ============================================
+# 集成 Checker - 生成后自动校验
+# ============================================
+
+import json
+import re
+from typing import List, Dict, Any
+
+
+class ExerciseGenerator:
+    """带自动校验的练习题生成器"""
+
+    def __init__(self, llm):
+        self.llm = llm
+        self.chain = LLMChain(llm=llm, prompt=word_transformation_prompt)
+        self.checker = ExerciseChecker()
+
+    def generate(self, word_list: str, max_retries: int = 3) -> List[Dict]:
+        """
+        生成练习题并自动校验
+
+        Args:
+            word_list: 词汇列表（逗号分隔）
+            max_retries: 最大重试次数
+
+        Returns:
+            通过校验的练习题列表
+        """
+        # 1. 生成题目
+        result = self.chain.run(word_list=word_list)
+
+        # 2. 解析 JSON
+        try:
+            exercises = json.loads(result)
+            if isinstance(exercises, dict):
+                exercises = [exercises]
+        except json.JSONDecodeError:
+            print("❌ JSON 解析失败")
+            return []
+
+        # 3. 校验每道题
+        valid_exercises = []
+        invalid_exercises = []
+
+        for exercise in exercises:
+            issues = self.checker.check_exercise(exercise)
+            if issues:
+                invalid_exercises.append({
+                    'exercise': exercise,
+                    'issues': issues
+                })
+            else:
+                valid_exercises.append(exercise)
+
+        # 4. 输出报告
+        print(f"\n📊 生成报告")
+        print(f"  总生成: {len(exercises)}")
+        print(f"  ✅ 通过: {len(valid_exercises)}")
+        print(f"  ❌ 失败: {len(invalid_exercises)}")
+
+        if invalid_exercises:
+            print(f"\n⚠️ 失败原因:")
+            for item in invalid_exercises:
+                print(f"  - {item['exercise'].get('id', 'unknown')}: {item['issues'][0]['type']}")
+
+        # 5. 如果通过率太低，重试
+        if len(valid_exercises) < len(exercises) * 0.5 and max_retries > 0:
+            print(f"\n🔄 通过率过低，剩余重试次数: {max_retries}")
+            # 可以在这里添加重试逻辑
+
+        return valid_exercises
