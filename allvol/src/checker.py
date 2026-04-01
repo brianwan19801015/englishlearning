@@ -42,22 +42,68 @@ class ExerciseChecker:
         """检查可数名词前是否有冠词"""
         issues = []
 
-        # 答案是可数名词复数或单数，且前面没有冠词/限定词
-        # 简单检查：answer 前是否有 "a "、"an "、"the "、"my "、"this " 等
-        # 更精确的需要用 NLP 分析句子结构
+        # 提取填空前的内容
+        blank_pos = context.find('______')
+        if blank_pos > 0:
+            before_blank = context[:blank_pos].strip().lower()
+            after_blank = context[blank_pos + 6:].strip().lower().split()[0] if blank_pos + 6 < len(context) else ''
 
-        # 检查常见错误：直接填复数名词但前面没有限定词
-        if answer.endswith('S') and not answer.endswith('SS'):  # 简单判断复数
-            # 看填空前是否有冠词
-            blank_pos = context.find('______')
-            if blank_pos > 0:
-                before_blank = context[:blank_pos].strip()
+            # 1. 检查是否有"安全词"（后面不需要冠词）
+            safe_prefixes = [
+                'many ', 'several ', 'some ', 'various ', 'different ',
+                'numerous ', 'multiple ', 'myriads of ',
+                'hundreds of ', 'thousands of ', 'millions of ',
+            ]
+            is_safe_prefix = any(before_blank.endswith(prefix) for prefix in safe_prefixes)
+
+            # 2. 检查是否是 "one of the best/worst + 复数" 结构
+            if 'one of the best' in before_blank or 'one of the worst' in before_blank:
+                is_safe_prefix = True
+
+            # 3. 检查前面是否有形容词（形容词 + 名词，不需要额外冠词）
+            # 例如：rechargeable batteries, beautiful harmonies, free samples
+            has_adjective = any(word in before_blank for word in [
+                'rechargeable ', 'beautiful ', 'free ', 'new ', 'old ', 'ancient ',
+                'minor ', 'several ', 'numerous ', 'various ', 'modern ', 'medical ',
+                'kitchen ', 'ancient ', 'foreign ', 'strange ', 'dark ', 'loud ',
+            ])
+
+            # 4. 如果是动词第三人称单数（cashes, finishes, injures 等），不是冠词问题
+            # 动词第三人称单数形式：原词 + s/es
+            hint_match = re.search(r'\(([^)]+)\)', context)
+            hint = hint_match.group(1).lower() if hint_match else ''
+            answer_lower = answer.lower()
+
+            # 检查是否是动词第三人称单数（原词 + s/es）
+            is_verb_third_person = False
+            if hint and answer_lower.startswith(hint) and len(answer_lower) > len(hint):
+                suffix = answer_lower[len(hint):]
+                if suffix in ['s', 'es']:
+                    is_verb_third_person = True
+
+            # 综合判断
+            if is_verb_third_person:
+                # 动词形式，不需要冠词检查
+                pass
+            elif is_safe_prefix or has_adjective:
+                # 有安全词或形容词，不需要冠词
+                pass
+            elif answer.endswith('S') and not answer.endswith('SS'):
+                # 可能需要冠词
                 last_word = before_blank.split()[-1] if before_blank else ''
-                if last_word not in ['a', 'an', 'the', 'my', 'your', 'his', 'her', 'this', 'that', 'these', 'those']:
+                has_article = last_word in [
+                    'a', 'an', 'the', 'my', 'your', 'his', 'her', 'its', 'this', 'that', 'these', 'those', 'own',
+                    # 常见形容词/名词作定语
+                    'kitchen', 'bedroom', 'bathroom', 'classroom', 'office', 'garden', 'park', 'street', 'city', 'town',
+                    'school', 'hospital', 'museum', 'library', 'station', 'airport', 'restaurant', 'hotel', 'shop', 'store',
+                    'book', 'door', 'window', 'wall', 'floor', 'ceiling', 'roof', 'table', 'chair', 'desk', 'bed', 'phone',
+                    'computer', 'tv', 'radio', 'car', 'bus', 'train', 'bike', 'ship', 'plane', 'boat',
+                ]
+                if not has_article:
                     issues.append({
                         'type': 'missing_article',
                         'message': f'可数名词 "{answer}" 前可能缺少冠词',
-                        'suggestion': f'考虑添加冠词，如 "a {answer.lower()}" 或 "the {answer.lower()}"'
+                        'suggestion': f'考虑在 "{answer.lower()}" 前添加冠词'
                     })
 
         return issues
