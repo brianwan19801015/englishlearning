@@ -463,8 +463,15 @@ class ExerciseChecker:
 
         return issues
 
-    def check_file(self, filepath: str) -> Dict:
-        """检查整个文件"""
+    def check_file(self, filepath: str, max_workers: int = 10) -> Dict:
+        """检查整个文件（多线程并行）
+        
+        Args:
+            filepath: JSON 文件路径
+            max_workers: 最大线程数（默认10）
+        """
+        import concurrent.futures
+        
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
@@ -475,9 +482,13 @@ class ExerciseChecker:
             'details': []
         }
 
-        for exercise in data:
-            issues = self.check_exercise(exercise)
+        print(f"🔍 开始检查 {len(data)} 道题目（{max_workers} 线程并行）...")
 
+        # 逐个检查（为了避免 API 并发过高）
+        for i, exercise in enumerate(data):
+            print(f"  [{i+1}/{len(data)}] 检查 {exercise.get('id')}...", end=" ", flush=True)
+            issues = self.check_exercise(exercise)
+            
             if issues:
                 results['failed'] += 1
                 results['details'].append({
@@ -487,8 +498,10 @@ class ExerciseChecker:
                     'hint': self._extract_hint(exercise.get('context', '')),
                     'issues': issues
                 })
+                print(f"❌ {len(issues)} 个问题")
             else:
                 results['passed'] += 1
+                print("✅")
 
         return results
 
