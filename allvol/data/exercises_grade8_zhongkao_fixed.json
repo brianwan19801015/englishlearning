@@ -116,7 +116,7 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "Under the microscope, we observed a single ______ moving slowly in the water sample. (bacteria)",
+    "context": "Under the microscope, we observed a single ______ in the water sample. (BACTERIA)",
     "correct_answers": [
       "BACTERIUM"
     ],
@@ -164,7 +164,7 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The old man's hands were thin and ______, showing his age clearly. (bone)",
+    "context": "The old man's hands were thin and ______, showing his age clearly. (BONY)",
     "correct_answers": [
       "BONY"
     ],
@@ -436,7 +436,7 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The weather changed in a very ______ way, from sunny to stormy in just minutes. (drama)",
+    "context": "The weather changed in a very ______ way, from sunny to stormy in just minutes. (DRAMATICALLY)",
     "correct_answers": [
       "DRAMATIC"
     ],
@@ -772,9 +772,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The doctor said that the new treatment usually ______ the patient within a few days. (injure)",
+    "context": "______ driving is the main cause of car accidents. (CARELESS)",
     "correct_answers": [
-      "INJURES"
+      "CARELESS"
     ],
     "is_vocab": [
       true
@@ -836,9 +836,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "In the comedy club, everyone laughed at the ______ who told the funniest story. (joke)",
+    "context": "People have ______ opinions about this topic. (DIFFERENT)",
     "correct_answers": [
-      "JOKER"
+      "DIFFERENT"
     ],
     "is_vocab": [
       true
@@ -868,9 +868,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The teacher asked the students to ______ their books on the desk before the test began. (lie)",
+    "context": "The company is facing some ______ difficulties. (FINANCIAL)",
     "correct_answers": [
-      "LAY"
+      "FINANCIAL"
     ],
     "is_vocab": [
       true
@@ -900,9 +900,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The doctor explained that the patient's fever was likely caused by a ______ infection. (malaria)",
+    "context": "The dog is very ______ to visitors. (FRIENDLY)",
     "correct_answers": [
-      "MALARIAL"
+      "FRIENDLY"
     ],
     "is_vocab": [
       true
@@ -916,9 +916,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The pianist's ______ performance left the entire audience in awe and admiration. (master)",
+    "context": "This is a very ______ building in our city. (HISTORICAL)",
     "correct_answers": [
-      "MASTERFUL"
+      "HISTORICAL"
     ],
     "is_vocab": [
       true
@@ -948,9 +948,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The patient recovered quickly, thanks to the ______ advanced treatment he received. (medical)",
+    "context": "The patient received ______ treatment at the hospital. (MEDICAL)",
     "correct_answers": [
-      "MEDICALLY"
+      "MEDICAL"
     ],
     "is_vocab": [
       true
@@ -1060,9 +1060,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "My sister loves reading so much that she dreams of becoming a famous ______ one day. (novel)",
+    "context": "He is not interested in ______ discussions. (POLITICAL)",
     "correct_answers": [
-      "NOVELIST"
+      "POLITICAL"
     ],
     "is_vocab": [
       true
@@ -1380,7 +1380,7 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "Different ______ around the world have their own unique traditions and ways of life. (society)",
+    "context": "Different ______ around the world have their own unique traditions. (SOCIETIES)",
     "correct_answers": [
       "SOCIETIES"
     ],
@@ -1396,9 +1396,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "In the wild, animals need strong instincts for ______ in harsh environments. (survive)",
+    "context": "China has many ______ customs during the Spring Festival. (TRADITIONAL)",
     "correct_answers": [
-      "SURVIVAL"
+      "TRADITIONAL"
     ],
     "is_vocab": [
       true
@@ -1428,9 +1428,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The ______ number of students in our school has increased by fifty this year. (total)",
+    "context": "The ______ family lives in a big mansion. (WEALTHY)",
     "correct_answers": [
-      "TOTALED"
+      "WEALTHY"
     ],
     "is_vocab": [
       true
