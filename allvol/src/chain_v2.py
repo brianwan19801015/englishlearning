@@ -6,7 +6,7 @@ LangChain Prompt 模板 -中考英语词性转换题生成
 2. 明确指定答案的词性类型
 3. 添加语法检查规则
 4. Few-shot 示例展示正确格式
-5. 集成自动校验（Checker）
+5. 集成自动校验 + 重试机制
 """
 
 import json
@@ -16,12 +16,6 @@ from typing import List, Dict, Any
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.llms import OpenAI
-
-# 导入校验器
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from checker import ExerciseChecker
 
 # ============================================
 # 核心 Prompt 模板
@@ -188,20 +182,36 @@ validation_prompt = PromptTemplate(
 
 
 # ============================================
+# 导入校验器
+# ============================================
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from checker import ExerciseChecker
+
+
+# ============================================
 # 使用示例
 # ============================================
 
 if __name__ == "__main__":
-    # 示例词汇列表
-    word_list = """act, advertise, cancel, cheap, cheerful, deal, death, destroy, discover, donate"""
+    # 示例：使用自动重试生成器
+    from langchain.llms import OpenAI
 
-    # 创建 Chain
+    # 初始化
     llm = OpenAI(temperature=0.7)
-    chain = LLMChain(llm=llm, prompt=word_transformation_prompt)
+    generator = ExerciseGenerator(llm)
 
-    # 生成题目
-    result = chain.run(word_list=word_list)
-    print(result)
+    # 生成（会自动重试直到通过）
+    word_list = "act, advertise, cancel, cheap, cheerful"
+    result = generator.generate(word_list, max_retries=3)
+
+    # result = {
+    #     'valid': [...],      # 通过的题目
+    #     'invalid': [...],   # 失败的题目
+    #     'stats': {...}      # 统计信息
+    # }
+    print(f"\n🎯 最终结果: {result['stats']}")
 
 
 # ============================================
@@ -214,37 +224,142 @@ from typing import List, Dict, Any
 
 
 class ExerciseGenerator:
-    """带自动校验的练习题生成器"""
+    """带自动校验和重试的练习题生成器"""
 
     def __init__(self, llm):
         self.llm = llm
         self.chain = LLMChain(llm=llm, prompt=word_transformation_prompt)
         self.checker = ExerciseChecker()
 
-    def generate(self, word_list: str, max_retries: int = 3) -> List[Dict]:
+    def _extract_hint(self, context: str) -> str:
+        """提取括号内的提示词"""
+        match = re.search(r'\(([^)]+)\)', context)
+        return match.group(1) if match else ''
+
+    def _generate_single(self, hint_word: str, context_hint: str = "") -> Dict:
+        """为单个词汇生成一道题目（专门用于重试）"""
+
+        # 如果有上下文提示，说明之前哪里错了
+        extra_instruction = ""
+        if context_hint:
+            extra_instruction = f"\n\n注意：之前的题目有以下问题，请避免：\n{context_hint}"
+
+        prompt = f"""请为以下词汇生成一道中考英语词性转换练习题。
+
+词汇：{hint_word}
+
+要求：
+1. 括号内给出源词（动词原形/形容词原级/名词单数）
+2. 答案必须有形态变化（加后缀/不规则变化），不能只是大小写不同！
+3. 句子符合英语语法（名词前如需冠词请添加）
+4. 逻辑合理
+
+示例正确转换：
+- act → ACTION（动词→名词，加-ion）
+- advertise → ADVERTISEMENT（动词→名词，加-ment）
+- rapid → RAPIDLY（形容词→副词，加-ly）
+- cheap → CHEAPER（形容词→比较级，加-er）
+- harmony → HARMONIES（名词→复数，加-s）
+
+错误示例（不要这样写）：
+- act → ACT（无变化，只改了大写）❌
+- habit → HABIT（无变化，只改了大写）❌
+
+{extra_instruction}
+
+请直接输出 JSON 格式的题目，包含字段：id, type, section, difficulty, context, correct_answers, is_vocab, vocab_count, blanks_count, created_at"""
+
+        result = self.llm(prompt)
+
+        # 尝试解析 JSON
+        try:
+            # 找到 JSON 开始和结束
+            json_match = re.search(r'\[.*\]', result, re.DOTALL)
+            if json_match:
+                exercise = json.loads(json_match.group())
+                if isinstance(exercise, list):
+                    exercise = exercise[0]
+                return exercise
+        except:
+            pass
+
+        # 如果解析失败，返回 None
+        return None
+
+    def _retry_failed(self, invalid_exercises: List[Dict], max_retries: int) -> List[Dict]:
+        """重新生成失败的题目"""
+        print(f"\n🔄 开始重试 {len(invalid_exercises)} 道失败题目...")
+
+        for i, item in enumerate(invalid_exercises):
+            exercise = item['exercise']
+            issues = item['issues']
+            hint = self._extract_hint(exercise.get('context', ''))
+
+            print(f"\n  [{i+1}/{len(invalid_exercises)}] 重新生成: {hint}")
+
+            # 最多重试几次
+            for retry in range(max_retries):
+                print(f"    第 {retry+1} 次尝试...", end=" ")
+
+                # 生成新题目
+                new_exercise = self._generate_single(hint)
+
+                if new_exercise:
+                    # 校验新题目
+                    new_issues = self.checker.check_exercise(new_exercise)
+
+                    if not new_issues:
+                        print("✅ 成功！")
+                        # 替换为新题目
+                        exercise.update(new_exercise)
+                        item['exercise'] = exercise
+                        item['issues'] = []
+                        break
+                    else:
+                        print(f"❌ 失败: {new_issues[0]['type']}")
+                else:
+                    print("❌ 生成失败")
+
+        # 返回修复后的列表
+        return [item['exercise'] for item in invalid_exercises if not item.get('issues')]
+
+    def generate(self, word_list: str, max_retries: int = 3) -> Dict:
         """
-        生成练习题并自动校验
+        生成练习题并自动校验+重试
 
         Args:
             word_list: 词汇列表（逗号分隔）
-            max_retries: 最大重试次数
+            max_retries: 每次失败的最大重试次数
 
         Returns:
-            通过校验的练习题列表
+            {
+                'valid': 通过的题目列表,
+                'invalid': 失败的题目列表,
+                'stats': 统计信息
+            }
         """
+        print("=" * 50)
+        print("🚀 开始生成练习题")
+        print("=" * 50)
+
         # 1. 生成题目
+        print("\n📝 步骤1: 调用 AI 生成题目...")
         result = self.chain.run(word_list=word_list)
 
         # 2. 解析 JSON
+        print("📝 步骤2: 解析 JSON...")
         try:
             exercises = json.loads(result)
             if isinstance(exercises, dict):
                 exercises = [exercises]
-        except json.JSONDecodeError:
-            print("❌ JSON 解析失败")
-            return []
+        except json.JSONDecodeError as e:
+            print(f"❌ JSON 解析失败: {e}")
+            return {'valid': [], 'invalid': [], 'stats': {'total': 0, 'passed': 0, 'failed': 0}}
+
+        print(f"   解析到 {len(exercises)} 道题目")
 
         # 3. 校验每道题
+        print("📝 步骤3: 自动校验...")
         valid_exercises = []
         invalid_exercises = []
 
@@ -258,20 +373,43 @@ class ExerciseGenerator:
             else:
                 valid_exercises.append(exercise)
 
-        # 4. 输出报告
-        print(f"\n📊 生成报告")
-        print(f"  总生成: {len(exercises)}")
+        # 4. 循环重试失败的题目
+        round_num = 0
+        while invalid_exercises and round_num < max_retries:
+            round_num += 1            print(f"\n📝 步骤4: 第 {round_num} 轮重试 ({len(invalid_exercises)} 道失败)...")
+
+            # 重新生成失败的题目
+            fixed = self._retry_failed(invalid_exercises, max_retries=2)
+
+            # 更新列表
+            valid_exercises.extend(fixed)
+            invalid_exercises = [item for item in invalid_exercises if item.get('issues')]
+
+            if not invalid_exercises:
+                print("\n🎉 所有题目都通过了！")
+                break
+
+        # 5. 输出最终报告
+        print("\n" + "=" * 50)
+        print("📊 最终报告")
+        print("=" * 50)
+        print(f"  总题目: {len(exercises)}")
         print(f"  ✅ 通过: {len(valid_exercises)}")
         print(f"  ❌ 失败: {len(invalid_exercises)}")
 
         if invalid_exercises:
-            print(f"\n⚠️ 失败原因:")
+            print(f"\n⚠️ 失败题目:")
             for item in invalid_exercises:
-                print(f"  - {item['exercise'].get('id', 'unknown')}: {item['issues'][0]['type']}")
+                ex = item['exercise']
+                print(f"  - {ex.get('id', 'unknown')}: {item['issues'][0]['type']}")
 
-        # 5. 如果通过率太低，重试
-        if len(valid_exercises) < len(exercises) * 0.5 and max_retries > 0:
-            print(f"\n🔄 通过率过低，剩余重试次数: {max_retries}")
-            # 可以在这里添加重试逻辑
-
-        return valid_exercises
+        return {
+            'valid': valid_exercises,
+            'invalid': invalid_exercises,
+            'stats': {
+                'total': len(exercises),
+                'passed': len(valid_exercises),
+                'failed': len(invalid_exercises),
+                'rounds': round_num
+            }
+        }
