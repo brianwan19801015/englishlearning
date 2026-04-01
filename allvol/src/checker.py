@@ -99,10 +99,14 @@ class ExerciseChecker:
             content = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
 
             # 如果 LLM 说有问题
-            if content != "通过" and "通过" not in content:
+            # 判断标准：包含"通过"且不包含"问题"或"错误"字眼
+            has_pass = "通过" in content
+            has_issue = any(kw in content for kw in ["问题", "错误", "不合理", "不自然", "不建议", "不推荐"])
+            
+            if has_issue and not has_pass:
                 return [{
                     'type': 'llm_semantic_issue',
-                    'message': f'LLM 语义检查: {content}',
+                    'message': f'LLM 语义检查: {content[:200]}',
                     'suggestion': '请调整句子或答案'
                 }]
         except Exception as e:
