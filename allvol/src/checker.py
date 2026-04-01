@@ -57,8 +57,8 @@ class ExerciseChecker:
         # 5. 检查填空位置上下文
         issues.extend(self._check_blank_context(context, answer, hint))
 
-        # 6. 如果规则检查通过，用 LLM 做语义检查
-        if not issues and self.llm_session:
+        # 6. LLM 语义检查（默认开启，作为初中英语老师把关）
+        if self.llm_session:
             llm_issues = self._check_semantics_llm(context, answer, hint)
             issues.extend(llm_issues)
 
