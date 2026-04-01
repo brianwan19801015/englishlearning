@@ -111,6 +111,81 @@ class ExerciseChecker:
 
         return []
 
+    def fix_exercise(self, exercise: Dict[str, Any]) -> Dict[str, Any]:
+        """用 LLM 自动修复有问题的练习题"""
+        if not self.llm_session:
+            print("⚠️ 无 LLM 客户端，无法自动修复")
+            return exercise
+
+        context = exercise.get('context', '')
+        answer = exercise.get('correct_answers', [''])[0]
+        hint = self._extract_hint(context)
+
+        # 先检查问题
+        issues = self.check_exercise(exercise)
+        if not issues:
+            print(f"✅ 题目无需修复: {exercise.get('id')}")
+            return exercise
+
+        # 构建修复提示
+        issue_descriptions = [f"- {i['type']}: {i['message']}" for i in issues]
+        issue_text = '\n'.join(issue_descriptions)
+
+        fix_prompt = f"""作为初中英语出题专家，请修复以下词性转换练习题的问题：
+
+原始题目：
+- 句子：{context}
+- 提示词：{hint}
+- 答案：{answer}
+
+发现的问题：
+{issue_text}
+
+请修复以上问题，重新生成题目。要求：
+1. 答案必须有形态变化（加后缀/不规则变化），不能只改大小写
+2. 句子语义通顺，符合中考考点
+3. 答案填入后句子合理自然
+4. 使用常见的中考词汇
+
+请直接输出 JSON 格式的修复结果，包含字段：context, correct_answers
+"""
+
+        try:
+            print(f"🔧 正在修复题目: {exercise.get('id')}...")
+            response = self.llm_session.post(
+                f"{self.ZENMUX_BASE_URL}/chat/completions",
+                json={
+                    "model": self.ZENMUX_MODEL,
+                    "messages": [{"role": "user", "content": fix_prompt}],
+                    "temperature": 0.5
+                },
+                timeout=30
+            )
+            result = response.json()
+            content = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+
+            # 解析 JSON
+            import json
+            try:
+                # 尝试提取 JSON
+                json_match = re.search(r'\{[^{}]*\}', content, re.DOTALL)
+                if json_match:
+                    fixed = json.loads(json_match.group())
+                    if 'context' in fixed:
+                        exercise['context'] = fixed['context']
+                    if 'correct_answers' in fixed:
+                        exercise['correct_answers'] = fixed['correct_answers'] if isinstance(fixed['correct_answers'], list) else [fixed['correct_answers']]
+                    print(f"✅ 已修复: {exercise.get('id')}")
+                    return exercise
+            except:
+                pass
+
+            print(f"⚠️ 修复解析失败，保持原题")
+        except Exception as e:
+            print(f"❌ 修复调用失败: {e}")
+
+        return exercise
+
     def _extract_hint(self, context: str) -> str:
         """提取括号内的提示词"""
         match = re.search(r'\(([^)]+)\)', context)
@@ -427,13 +502,46 @@ class ExerciseChecker:
 
 
 if __name__ == '__main__':
-    checker = ExerciseChecker()
-    results = checker.check_file('allvol/data/exercises_grade8_zhongkao_fixed.json')
-    report = checker.generate_fix_suggestions(results)
+    import sys
 
-    print(report)
+    checker = ExerciseChecker(use_llm=True)
 
-    # 保存报告
-    with open('allvol/data/quality_report.md', 'w', encoding='utf-8') as f:
-        f.write(report)
-    print(f"\n✅ 报告已保存到 allvol/data/quality_report.md")
+    if len(sys.argv) > 1 and sys.argv[1] == '--fix':
+        # 自动修复模式
+        print("🔧 自动修复模式\n" + "="*50)
+
+        with open('allvol/data/exercises_grade8_zhongkao_fixed.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        fixed_count = 0
+        for i, exercise in enumerate(data):
+            print(f"\n[{i+1}/{len(data)}] 检查 {exercise.get('id')}...")
+            issues = checker.check_exercise(exercise)
+
+            if issues:
+                # 有问题，尝试修复
+                fixed_exercise = checker.fix_exercise(exercise)
+                if fixed_exercise != exercise:
+                    fixed_count += 1
+            else:
+                print(f"  ✅ 无问题")
+
+        print("\n" + "="*50)
+        print(f"🎉 修复完成！共修复 {fixed_count} 道题")
+
+        # 保存
+        with open('allvol/data/exercises_grade8_zhongkao_fixed.json', 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        print(f"✅ 已保存到 allvol/data/exercises_grade8_zhongkao_fixed.json")
+
+    else:
+        # 只检查模式
+        results = checker.check_file('allvol/data/exercises_grade8_zhongkao_fixed.json')
+        report = checker.generate_fix_suggestions(results)
+
+        print(report)
+
+        # 保存报告
+        with open('allvol/data/quality_report.md', 'w', encoding='utf-8') as f:
+            f.write(report)
+        print(f"\n✅ 报告已保存到 allvol/data/quality_report.md")
