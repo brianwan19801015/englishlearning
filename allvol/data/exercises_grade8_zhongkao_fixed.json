@@ -1172,7 +1172,7 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The river flowed ______ after the heavy rain, making it dangerous to cross. (rapidly)",
+    "context": "The river became ______ after the heavy rain, making it dangerous to cross. (rapid)",
     "correct_answers": [
       "RAPID"
     ],
@@ -1508,9 +1508,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "The manager said there was ______ evidence to support the employee's claim, so the case was closed. (whatever)",
+    "context": "The manager found ______ evidence to support the employee's claim. (convince)",
     "correct_answers": [
-      "WHATEVER"
+      "CONVINCING"
     ],
     "is_vocab": [
       true
@@ -1540,9 +1540,9 @@
     "type": "word_transformation",
     "section": "grade8",
     "difficulty": "medium",
-    "context": "In old poems, you might see the word ______ used instead of 'whenever' to fit the rhythm. (whenever)",
+    "context": "Poetry often uses ______ language to create rhythm and beauty. (tradition)",
     "correct_answers": [
-      "WHENEVER"
+      "TRADITIONAL"
     ],
     "is_vocab": [
       true
