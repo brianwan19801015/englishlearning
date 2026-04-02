@@ -1,0 +1,3998 @@
+{
+  "grade7": {
+    "act": [
+      "ACTION",
+      "ACTOR",
+      "ACTRESS",
+      "ACTIVITY"
+    ],
+    "add": [
+      "ADDITION"
+    ],
+    "agree": [
+      "AGREEMENT"
+    ],
+    "amuse": [
+      "AMUSEMENT"
+    ],
+    "attract": [
+      "ATTRACTION"
+    ],
+    "celebrate": [
+      "CELEBRATION"
+    ],
+    "communicate": [
+      "COMMUNICATION"
+    ],
+    "decide": [
+      "DECISION"
+    ],
+    "describe": [
+      "DESCRIPTION"
+    ],
+    "destroy": [
+      "DESTRUCTION"
+    ],
+    "discover": [
+      "DISCOVERY"
+    ],
+    "educate": [
+      "EDUCATION"
+    ],
+    "explain": [
+      "EXPLANATION"
+    ],
+    "imagine": [
+      "IMAGINATION"
+    ],
+    "inform": [
+      "INFORMATION"
+    ],
+    "inspire": [
+      "INSPIRATION"
+    ],
+    "introduce": [
+      "INTRODUCTION"
+    ],
+    "invite": [
+      "INVITATION"
+    ],
+    "manage": [
+      "MANAGEMENT"
+    ],
+    "measure": [
+      "MEASUREMENT"
+    ],
+    "move": [
+      "MOVEMENT"
+    ],
+    "operate": [
+      "OPERATION"
+    ],
+    "organize": [
+      "ORGANIZATION"
+    ],
+    "protect": [
+      "PROTECTION"
+    ],
+    "satisfy": [
+      "SATISFIED",
+      "SATISFYING"
+    ],
+    "teach": [
+      "TAUGHT"
+    ],
+    "translate": [
+      "TRANSLATION"
+    ],
+    "visit": [
+      "VISITOR"
+    ],
+    "win": [
+      "WON"
+    ],
+    "active": [
+      "ACTIVELY"
+    ],
+    "angry": [
+      "ANGRILY"
+    ],
+    "beautiful": [
+      "BEAUTIFULLY"
+    ],
+    "careful": [
+      "CAREFULLY"
+    ],
+    "careless": [
+      "CARELESSLY"
+    ],
+    "clear": [
+      "CLEARLY"
+    ],
+    "complete": [
+      "COMPLETELY"
+    ],
+    "correct": [
+      "CORRECTLY"
+    ],
+    "easy": [
+      "EASILY"
+    ],
+    "final": [
+      "FINALLY"
+    ],
+    "fluent": [
+      "FLUENTLY"
+    ],
+    "gentle": [
+      "GENTLY"
+    ],
+    "happy": [
+      "HAPPIER",
+      "HAPPIEST"
+    ],
+    "heavy": [
+      "HEAVIER",
+      "HEAVIEST"
+    ],
+    "helpful": [
+      "HELPFULLY"
+    ],
+    "honest": [
+      "HONESTLY"
+    ],
+    "impossible": [
+      "IMPOSSIBLY"
+    ],
+    "kind": [
+      "KINDNESS"
+    ],
+    "loud": [
+      "LOUDLY"
+    ],
+    "lucky": [
+      "LUCKILY"
+    ],
+    "necessary": [
+      "NECESSARILY"
+    ],
+    "nervous": [
+      "NERVOUSLY"
+    ],
+    "nice": [
+      "NICELY"
+    ],
+    "noisy": [
+      "NOISILY"
+    ],
+    "obvious": [
+      "OBVIOUSLY"
+    ],
+    "patient": [
+      "PATIENCE"
+    ],
+    "perfect": [
+      "PERFECTLY"
+    ],
+    "polite": [
+      "POLITELY"
+    ],
+    "possible": [
+      "POSSIBLY"
+    ],
+    "proper": [
+      "PROPERLY"
+    ],
+    "quick": [
+      "QUICKLY"
+    ],
+    "quiet": [
+      "QUIETLY"
+    ],
+    "rapid": [
+      "RAPIDLY"
+    ],
+    "real": [
+      "REALLY"
+    ],
+    "recent": [
+      "RECENTLY"
+    ],
+    "serious": [
+      "SERIOUSLY"
+    ],
+    "safe": [
+      "SAFETY"
+    ],
+    "simple": [
+      "SIMPLER",
+      "SIMPLEST"
+    ],
+    "slow": [
+      "SLOWLY"
+    ],
+    "special": [
+      "SPECIALLY"
+    ],
+    "sudden": [
+      "SUDDENLY"
+    ],
+    "sure": [
+      "SURELY"
+    ],
+    "terrible": [
+      "TERRIBLY"
+    ],
+    "true": [
+      "TRUTH"
+    ],
+    "usual": [
+      "USUALLY"
+    ],
+    "warm": [
+      "WARMTH"
+    ],
+    "wonderful": [
+      "WONDERFULLY"
+    ],
+    "able": [
+      "ABILITY"
+    ],
+    "child": [
+      "CHILDREN"
+    ],
+    "curious": [
+      "CURIOSITY"
+    ],
+    "difficult": [
+      "DIFFICULTY"
+    ],
+    "friend": [
+      "FRIEND"
+    ],
+    "good": [
+      "BETTER",
+      "BEST"
+    ],
+    "health": [
+      "HEALTHY"
+    ],
+    "important": [
+      "MORE IMPORTANT",
+      "MOST IMPORTANT"
+    ],
+    "interest": [
+      "INTERESTED",
+      "INTERESTING"
+    ],
+    "lonely": [
+      "LONELINESS"
+    ],
+    "nation": [
+      "NATIONAL"
+    ],
+    "nature": [
+      "NATURAL"
+    ],
+    "popular": [
+      "MORE POPULAR",
+      "MOST POPULAR"
+    ],
+    "strong": [
+      "STRONGER",
+      "STRONGEST"
+    ],
+    "succeed": [
+      "SUCCESS"
+    ],
+    "weak": [
+      "WEAKNESS"
+    ],
+    "wise": [
+      "WISDOM"
+    ],
+    "bore": [
+      "BORED",
+      "BORING"
+    ],
+    "confuse": [
+      "CONFUSED",
+      "CONFUSING"
+    ],
+    "disappoint": [
+      "DISAPPOINTED",
+      "DISAPPOINTING"
+    ],
+    "embarrass": [
+      "EMBARRASSED",
+      "EMBARRASSING"
+    ],
+    "encourage": [
+      "ENCOURAGED",
+      "ENCOURAGING"
+    ],
+    "excite": [
+      "EXCITED",
+      "EXCITING"
+    ],
+    "frighten": [
+      "FRIGHTENED",
+      "FRIGHTENING"
+    ],
+    "relax": [
+      "RELAXED",
+      "RELAXING"
+    ],
+    "surprise": [
+      "SURPRISED",
+      "SURPRISING"
+    ],
+    "tire": [
+      "TIRED",
+      "TIRING"
+    ],
+    "worry": [
+      "WORRIED",
+      "WORRYING"
+    ],
+    "become": [
+      "BECAME",
+      "BECOME"
+    ],
+    "begin": [
+      "BEGAN",
+      "BEGUN"
+    ],
+    "break": [
+      "BROKE",
+      "BROKEN"
+    ],
+    "bring": [
+      "BROUGHT"
+    ],
+    "build": [
+      "BUILT"
+    ],
+    "buy": [
+      "BOUGHT"
+    ],
+    "catch": [
+      "CAUGHT"
+    ],
+    "choose": [
+      "CHOSE",
+      "CHOSEN"
+    ],
+    "come": [
+      "CAME",
+      "COME"
+    ],
+    "deal": [
+      "DEALT"
+    ],
+    "dig": [
+      "DUG"
+    ],
+    "do": [
+      "DID",
+      "DONE"
+    ],
+    "draw": [
+      "DREW",
+      "DRAWN"
+    ],
+    "drink": [
+      "DRANK",
+      "DRUNK"
+    ],
+    "drive": [
+      "DROVE",
+      "DRIVEN"
+    ],
+    "eat": [
+      "ATE",
+      "EATEN"
+    ],
+    "fall": [
+      "FELL",
+      "FALLEN"
+    ],
+    "feel": [
+      "FELT"
+    ],
+    "fight": [
+      "FOUGHT"
+    ],
+    "find": [
+      "FOUND"
+    ],
+    "fly": [
+      "FLEW",
+      "FLOWN"
+    ],
+    "forget": [
+      "FORGOT",
+      "FORGOTTEN"
+    ],
+    "get": [
+      "GOT"
+    ],
+    "give": [
+      "GAVE",
+      "GIVEN"
+    ],
+    "go": [
+      "WENT",
+      "GONE"
+    ],
+    "grow": [
+      "GREW",
+      "GROWN"
+    ],
+    "have": [
+      "HAD"
+    ],
+    "hear": [
+      "HEARD"
+    ],
+    "hide": [
+      "HID",
+      "HIDDEN"
+    ],
+    "hit": [
+      "HIT"
+    ],
+    "hold": [
+      "HELD"
+    ],
+    "hurt": [
+      "HURT"
+    ],
+    "keep": [
+      "KEPT"
+    ],
+    "know": [
+      "KNEW",
+      "KNOWN"
+    ],
+    "lead": [
+      "LED"
+    ],
+    "leave": [
+      "LEFT"
+    ],
+    "lend": [
+      "LENT"
+    ],
+    "lose": [
+      "LOST"
+    ],
+    "make": [
+      "MADE"
+    ],
+    "mean": [
+      "MEANT"
+    ],
+    "meet": [
+      "MET"
+    ],
+    "pay": [
+      "PAID"
+    ],
+    "put": [
+      "PUT"
+    ],
+    "read": [
+      "READ"
+    ],
+    "ride": [
+      "RODE",
+      "RIDDEN"
+    ],
+    "rise": [
+      "ROSE",
+      "RISEN"
+    ],
+    "run": [
+      "RAN",
+      "RUN"
+    ],
+    "say": [
+      "SAID"
+    ],
+    "see": [
+      "SAW",
+      "SEEN"
+    ],
+    "sell": [
+      "SOLD"
+    ],
+    "send": [
+      "SENT"
+    ],
+    "set": [
+      "SET"
+    ],
+    "shake": [
+      "SHOOK",
+      "SHAKEN"
+    ],
+    "show": [
+      "SHOWED",
+      "SHOWN"
+    ],
+    "shut": [
+      "SHUT"
+    ],
+    "sing": [
+      "SANG",
+      "SUNG"
+    ],
+    "sit": [
+      "SAT"
+    ],
+    "sleep": [
+      "SLEPT"
+    ],
+    "speak": [
+      "SPOKE",
+      "SPOKEN"
+    ],
+    "spend": [
+      "SPENT"
+    ],
+    "stand": [
+      "STOOD"
+    ],
+    "steal": [
+      "STOLE",
+      "STOLEN"
+    ],
+    "swim": [
+      "SWAM",
+      "SWUM"
+    ],
+    "take": [
+      "TOOK",
+      "TAKEN"
+    ],
+    "tell": [
+      "TOLD"
+    ],
+    "think": [
+      "THOUGHT"
+    ],
+    "throw": [
+      "THREW",
+      "THROWN"
+    ],
+    "understand": [
+      "UNDERSTOOD"
+    ],
+    "wear": [
+      "WORE",
+      "WORN"
+    ],
+    "write": [
+      "WROTE",
+      "WRITTEN"
+    ],
+    "bad": [
+      "WORSE",
+      "WORST"
+    ],
+    "big": [
+      "BIGGER",
+      "BIGGEST"
+    ],
+    "far": [
+      "FARTHER",
+      "FARTHEST"
+    ],
+    "hot": [
+      "HOTTER",
+      "HOTTEST"
+    ],
+    "interesting": [
+      "MORE INTERESTING",
+      "MOST INTERESTING"
+    ],
+    "late": [
+      "LATER",
+      "LATEST"
+    ],
+    "little": [
+      "LESS",
+      "LEAST"
+    ],
+    "many": [
+      "MORE",
+      "MOST"
+    ],
+    "much": [
+      "MORE",
+      "MOST"
+    ],
+    "near": [
+      "NEARER",
+      "NEAREST"
+    ],
+    "old": [
+      "OLDER",
+      "OLDEST"
+    ],
+    "short": [
+      "SHORTER",
+      "SHORTEST"
+    ],
+    "small": [
+      "SMALLER",
+      "SMALLEST"
+    ],
+    "tall": [
+      "TALLER",
+      "TALLEST"
+    ],
+    "thin": [
+      "THINNER",
+      "THINNEST"
+    ],
+    "battery": [
+      "BATTERIES"
+    ],
+    "dictionary": [
+      "DICTIONARIES"
+    ],
+    "family": [
+      "FAMILIES"
+    ],
+    "harmony": [
+      "HARMONIES"
+    ],
+    "injury": [
+      "INJURIES"
+    ],
+    "knife": [
+      "KNIVES"
+    ],
+    "leaf": [
+      "LEAVES"
+    ],
+    "life": [
+      "LIVES"
+    ],
+    "society": [
+      "SOCIETIES"
+    ],
+    "activity": [
+      "ACTIVITIES"
+    ]
+  },
+  "grade8": {
+    "achieve": [
+      "ACHIEVEMENT"
+    ],
+    "advertise": [
+      "ADVERTISEMENT",
+      "ADVERTISING"
+    ],
+    "announce": [
+      "ANNOUNCEMENT"
+    ],
+    "appreciate": [
+      "APPRECIATION"
+    ],
+    "assist": [
+      "ASSISTANCE",
+      "ASSISTANT"
+    ],
+    "behave": [
+      "BEHAVIOR"
+    ],
+    "benefit": [
+      "BENEFIT"
+    ],
+    "calculate": [
+      "CALCULATION"
+    ],
+    "challenge": [
+      "CHALLENGE"
+    ],
+    "compete": [
+      "COMPETITION"
+    ],
+    "conclude": [
+      "CONCLUSION"
+    ],
+    "contribute": [
+      "CONTRIBUTION"
+    ],
+    "create": [
+      "CREATION"
+    ],
+    "defend": [
+      "DEFENSE"
+    ],
+    "demand": [
+      "DEMAND"
+    ],
+    "design": [
+      "DESIGN"
+    ],
+    "determine": [
+      "DETERMINATION"
+    ],
+    "develop": [
+      "DEVELOPMENT"
+    ],
+    "differ": [
+      "DIFFERENT",
+      "DIFFERENCE"
+    ],
+    "encourage": [
+      "ENCOURAGEMENT"
+    ],
+    "examine": [
+      "EXAMINATION"
+    ],
+    "explore": [
+      "EXPLORATION"
+    ],
+    "express": [
+      "EXPRESSION"
+    ],
+    "generate": [
+      "GENERATION"
+    ],
+    "govern": [
+      "GOVERNMENT"
+    ],
+    "identify": [
+      "IDENTITY"
+    ],
+    "ignore": [
+      "IGNORANCE"
+    ],
+    "improve": [
+      "IMPROVEMENT"
+    ],
+    "indicate": [
+      "INDICATION"
+    ],
+    "influence": [
+      "INFLUENCE"
+    ],
+    "injure": [
+      "INJURY"
+    ],
+    "inspire": [
+      "INSPIRATION"
+    ],
+    "install": [
+      "INSTALLATION"
+    ],
+    "intend": [
+      "INTENTION"
+    ],
+    "investigate": [
+      "INVESTIGATION"
+    ],
+    "legal": [
+      "LEGAL"
+    ],
+    "locate": [
+      "LOCATION"
+    ],
+    "maintain": [
+      "MAINTENANCE"
+    ],
+    "marry": [
+      "MARRIAGE"
+    ],
+    "motivate": [
+      "MOTIVATION"
+    ],
+    "negotiate": [
+      "NEGOTIATION"
+    ],
+    "notice": [
+      "NOTICE"
+    ],
+    "observe": [
+      "OBSERVATION"
+    ],
+    "occupy": [
+      "OCCUPATION"
+    ],
+    "offer": [
+      "OFFER"
+    ],
+    "oppose": [
+      "OPPOSITION"
+    ],
+    "participate": [
+      "PARTICIPATION"
+    ],
+    "perform": [
+      "PERFORMANCE"
+    ],
+    "permit": [
+      "PERMISSION"
+    ],
+    "persuade": [
+      "PERSUASION"
+    ],
+    "predict": [
+      "PREDICTION"
+    ],
+    "prefer": [
+      "PREFERENCE"
+    ],
+    "prepare": [
+      "PREPARATION"
+    ],
+    "present": [
+      "PRESENTLY"
+    ],
+    "prevent": [
+      "PREVENTION"
+    ],
+    "produce": [
+      "PRODUCTION"
+    ],
+    "promote": [
+      "PROMOTION"
+    ],
+    "propose": [
+      "PROPOSAL"
+    ],
+    "protect": [
+      "PROTECTION"
+    ],
+    "prove": [
+      "PROVED",
+      "PROVEN",
+      "PROOF"
+    ],
+    "provide": [
+      "PROVISION"
+    ],
+    "punish": [
+      "PUNISHMENT"
+    ],
+    "qualify": [
+      "QUALIFICATION"
+    ],
+    "realize": [
+      "REALIZATION"
+    ],
+    "recognize": [
+      "RECOGNITION"
+    ],
+    "recommend": [
+      "RECOMMENDATION"
+    ],
+    "record": [
+      "RECORD"
+    ],
+    "recover": [
+      "RECOVERY"
+    ],
+    "reduce": [
+      "REDUCTION"
+    ],
+    "reflect": [
+      "REFLECTION"
+    ],
+    "reform": [
+      "REFORM"
+    ],
+    "refuse": [
+      "REFUSAL"
+    ],
+    "reject": [
+      "REJECTION"
+    ],
+    "relate": [
+      "RELATION"
+    ],
+    "relax": [
+      "RELAXATION"
+    ],
+    "rely": [
+      "RELIANCE"
+    ],
+    "remind": [
+      "REMINDER"
+    ],
+    "remove": [
+      "REMOVAL"
+    ],
+    "repair": [
+      "REPAIR"
+    ],
+    "replace": [
+      "REPLACEMENT"
+    ],
+    "require": [
+      "REQUIREMENT"
+    ],
+    "rescue": [
+      "RESCUE",
+      "RESCUEDLY"
+    ],
+    "reserve": [
+      "RESERVATION"
+    ],
+    "resist": [
+      "RESISTANCE"
+    ],
+    "resolve": [
+      "RESOLUTION"
+    ],
+    "respect": [
+      "RESPECT"
+    ],
+    "respond": [
+      "RESPONSE"
+    ],
+    "restore": [
+      "RESTORATION"
+    ],
+    "restrict": [
+      "RESTRICTION"
+    ],
+    "reveal": [
+      "REVELATION"
+    ],
+    "review": [
+      "REVIEW"
+    ],
+    "revise": [
+      "REVISION"
+    ],
+    "reward": [
+      "REWARD"
+    ],
+    "risk": [
+      "RISK"
+    ],
+    "satisfy": [
+      "SATISFACTION"
+    ],
+    "save": [
+      "SAVING"
+    ],
+    "schedule": [
+      "SCHEDULE"
+    ],
+    "search": [
+      "SEARCH"
+    ],
+    "secure": [
+      "SECURELY"
+    ],
+    "select": [
+      "SELECTION"
+    ],
+    "sense": [
+      "SENSATION"
+    ],
+    "separate": [
+      "SEPARATELY"
+    ],
+    "serve": [
+      "SERVICE"
+    ],
+    "settle": [
+      "SETTLEMENT"
+    ],
+    "shelter": [
+      "SHELTER"
+    ],
+    "sign": [
+      "SIGNATURE"
+    ],
+    "solve": [
+      "SOLUTION"
+    ],
+    "source": [
+      "SOURCE"
+    ],
+    "special": [
+      "SPECIALLY"
+    ],
+    "specify": [
+      "SPECIFICATION"
+    ],
+    "sponsor": [
+      "SPONSOR"
+    ],
+    "spot": [
+      "SPOT"
+    ],
+    "standard": [
+      "STANDARD"
+    ],
+    "starve": [
+      "STARVATION"
+    ],
+    "statement": [
+      "STATEMENT"
+    ],
+    "status": [
+      "STATUS"
+    ],
+    "stimulate": [
+      "STIMULATION"
+    ],
+    "stress": [
+      "STRESS"
+    ],
+    "strike": [
+      "STROOK",
+      "STRIKEN"
+    ],
+    "struggle": [
+      "STRUGGLE"
+    ],
+    "study": [
+      "STUDENT",
+      "STUDY"
+    ],
+    "style": [
+      "STYLISH"
+    ],
+    "submit": [
+      "SUBMISSION"
+    ],
+    "succeed": [
+      "SUCCESS"
+    ],
+    "suffer": [
+      "SUFFERING"
+    ],
+    "suggest": [
+      "SUGGESTION"
+    ],
+    "supply": [
+      "SUPPLY"
+    ],
+    "support": [
+      "SUPPORT"
+    ],
+    "suppose": [
+      "SUPPOSED"
+    ],
+    "surface": [
+      "SURFACE"
+    ],
+    "surprise": [
+      "SURPRISE"
+    ],
+    "surround": [
+      "SURROUNDING"
+    ],
+    "survive": [
+      "SURVIVAL"
+    ],
+    "suspect": [
+      "SUSPICION"
+    ],
+    "sustain": [
+      "SUSTAINABLE"
+    ],
+    "swear": [
+      "SWORE",
+      "SWORN"
+    ],
+    "sweep": [
+      "SWEPT"
+    ],
+    "swim": [
+      "SWAM",
+      "SWUM"
+    ],
+    "symbol": [
+      "SYMBOL"
+    ],
+    "system": [
+      "SYSTEM"
+    ],
+    "talent": [
+      "TALENT"
+    ],
+    "taste": [
+      "TASTE"
+    ],
+    "technical": [
+      "TECHNICALLY"
+    ],
+    "tender": [
+      "TENDERLY"
+    ],
+    "tense": [
+      "TENSELY"
+    ],
+    "terrible": [
+      "TERRIBLY",
+      "TERRIBLE"
+    ],
+    "terrific": [
+      "TERRIFICALLY"
+    ],
+    "thankful": [
+      "THANKFULLY"
+    ],
+    "thorough": [
+      "THOROUGHLY"
+    ],
+    "thoughtful": [
+      "THOUGHTFULLY"
+    ],
+    "threat": [
+      "THREAT"
+    ],
+    "thrill": [
+      "THRILL"
+    ],
+    "tide": [
+      "TIDED"
+    ],
+    "tight": [
+      "TIGHT"
+    ],
+    "timber": [
+      "TIMBER"
+    ],
+    "timely": [
+      "TIMELY"
+    ],
+    "tiny": [
+      "TINILY"
+    ],
+    "tire": [
+      "TIRED"
+    ],
+    "tissue": [
+      "TISSUE"
+    ],
+    "title": [
+      "TITLE"
+    ],
+    "toast": [
+      "TOAST"
+    ],
+    "tolerate": [
+      "TOLERATE"
+    ],
+    "tone": [
+      "TONE"
+    ],
+    "tongue": [
+      "TONGUE"
+    ],
+    "tooth": [
+      "TEETH"
+    ],
+    "topic": [
+      "TOPIC"
+    ],
+    "total": [
+      "TOTAL"
+    ],
+    "touch": [
+      "TOUCH"
+    ],
+    "tough": [
+      "TOUGH"
+    ],
+    "tour": [
+      "TOUR"
+    ],
+    "tourist": [
+      "TOURIST"
+    ],
+    "tournament": [
+      "TOURNAMENT"
+    ],
+    "toward": [
+      "TOWARD"
+    ],
+    "tower": [
+      "TOWER"
+    ],
+    "trace": [
+      "TRACE"
+    ],
+    "track": [
+      "TRACK"
+    ],
+    "trade": [
+      "TRADE"
+    ],
+    "tradition": [
+      "TRADITIONAL"
+    ],
+    "traffic": [
+      "TRAFFIC"
+    ],
+    "train": [
+      "TRAIN"
+    ],
+    "training": [
+      "TRAINING"
+    ],
+    "transfer": [
+      "TRANSFER"
+    ],
+    "transform": [
+      "TRANSFORM"
+    ],
+    "transit": [
+      "TRANSIT"
+    ],
+    "translate": [
+      "TRANSLATION"
+    ],
+    "transport": [
+      "TRANSPORT"
+    ],
+    "trap": [
+      "TRAP"
+    ],
+    "trash": [
+      "TRASH"
+    ],
+    "travel": [
+      "TRAVEL"
+    ],
+    "treat": [
+      "TREATMENT",
+      "TREAT"
+    ],
+    "treatment": [
+      "TREATMENT"
+    ],
+    "tree": [
+      "TREE"
+    ],
+    "trend": [
+      "TREND"
+    ],
+    "trial": [
+      "TRIAL"
+    ],
+    "trick": [
+      "TRICK"
+    ],
+    "trip": [
+      "TRIP"
+    ],
+    "troop": [
+      "TROOP"
+    ],
+    "trouble": [
+      "TROUBLE"
+    ],
+    "truck": [
+      "TRUCK"
+    ],
+    "truly": [
+      "TRULY"
+    ],
+    "trust": [
+      "TRUST"
+    ],
+    "truth": [
+      "TRUTHFUL"
+    ],
+    "tube": [
+      "TUBE"
+    ],
+    "tune": [
+      "TUNE"
+    ],
+    "turn": [
+      "TURN"
+    ],
+    "tutor": [
+      "TUTOR"
+    ],
+    "twice": [
+      "TWICE"
+    ],
+    "type": [
+      "TYPE"
+    ],
+    "typical": [
+      "TYPICAL"
+    ],
+    "ugly": [
+      "UGLY"
+    ],
+    "ultimate": [
+      "ULTIMATE"
+    ],
+    "umbrella": [
+      "UMBRELLA"
+    ],
+    "unbelievable": [
+      "UNBELIEVABLE"
+    ],
+    "uncertain": [
+      "UNCERTAIN"
+    ],
+    "uncle": [
+      "UNCLE"
+    ],
+    "uncomfortable": [
+      "UNCOMFORTABLE"
+    ],
+    "unconscious": [
+      "UNCONSCIOUS"
+    ],
+    "uncover": [
+      "UNCOVER"
+    ],
+    "underestimate": [
+      "UNDERESTIMATE"
+    ],
+    "undergo": [
+      "UNDERGO"
+    ],
+    "understand": [
+      "UNDERSTANDING",
+      "UNDERSTOOD"
+    ],
+    "undertake": [
+      "UNDERTAKE"
+    ],
+    "unemployment": [
+      "UNEMPLOYMENT"
+    ],
+    "unexpected": [
+      "UNEXPECTED"
+    ],
+    "unfair": [
+      "UNFAIR"
+    ],
+    "unfortunate": [
+      "UNFORTUNATE"
+    ],
+    "unhappy": [
+      "UNHAPPY"
+    ],
+    "unhealthy": [
+      "UNHEALTHY"
+    ],
+    "uniform": [
+      "UNIFORM"
+    ],
+    "uninterested": [
+      "UNINTERESTED"
+    ],
+    "union": [
+      "UNION"
+    ],
+    "unique": [
+      "UNIQUELY"
+    ],
+    "unit": [
+      "UNIT"
+    ],
+    "unite": [
+      "UNITE"
+    ],
+    "unity": [
+      "UNITY"
+    ],
+    "universal": [
+      "UNIVERSAL"
+    ],
+    "universe": [
+      "UNIVERSE"
+    ],
+    "university": [
+      "UNIVERSITY"
+    ],
+    "unknown": [
+      "UNKNOWN"
+    ],
+    "unlawful": [
+      "UNLAWFUL"
+    ],
+    "unlike": [
+      "UNLIKE"
+    ],
+    "unlikely": [
+      "UNLIKELY"
+    ],
+    "unload": [
+      "UNLOAD"
+    ],
+    "unlock": [
+      "UNLOCK"
+    ],
+    "unnecessary": [
+      "UNNECESSARY"
+    ],
+    "unpleasant": [
+      "UNPLEASANT"
+    ],
+    "unreasonable": [
+      "UNREASONABLE"
+    ],
+    "unreliable": [
+      "UNRELIABLE"
+    ],
+    "unusual": [
+      "UNUSUALLY"
+    ],
+    "unwilling": [
+      "UNWILLING"
+    ],
+    "upcoming": [
+      "UPCOMING"
+    ],
+    "update": [
+      "UPDATE"
+    ],
+    "upgrade": [
+      "UPGRADE"
+    ],
+    "uphold": [
+      "UPHELD"
+    ],
+    "upon": [
+      "UPON"
+    ],
+    "upper": [
+      "UPPER"
+    ],
+    "upset": [
+      "UPSET"
+    ],
+    "upstairs": [
+      "UPSTAIRS"
+    ],
+    "upward": [
+      "UPWARD"
+    ],
+    "urban": [
+      "URBAN"
+    ],
+    "urge": [
+      "URGE"
+    ],
+    "urgent": [
+      "URGENTLY"
+    ],
+    "usage": [
+      "USAGE"
+    ],
+    "useless": [
+      "USELESSLY"
+    ],
+    "user": [
+      "USER"
+    ],
+    "usual": [
+      "USUAL"
+    ],
+    "utility": [
+      "UTILITY"
+    ],
+    "vacation": [
+      "VACATION"
+    ],
+    "vague": [
+      "VAGUELY"
+    ],
+    "vain": [
+      "VAIN"
+    ],
+    "valid": [
+      "VALID"
+    ],
+    "valuable": [
+      "VALUABLE"
+    ],
+    "value": [
+      "VALUE",
+      "VALUATION",
+      "VALUABLE"
+    ],
+    "vanish": [
+      "VANISH"
+    ],
+    "varied": [
+      "VARIED"
+    ],
+    "variety": [
+      "VARIETY"
+    ],
+    "various": [
+      "VARIOUSLY"
+    ],
+    "vary": [
+      "VARY"
+    ],
+    "vast": [
+      "VASTLY"
+    ],
+    "vegetable": [
+      "VEGETABLE"
+    ],
+    "vehicle": [
+      "VEHICLE"
+    ],
+    "venture": [
+      "VENTURE"
+    ],
+    "verb": [
+      "VERB"
+    ],
+    "verify": [
+      "VERIFY"
+    ],
+    "version": [
+      "VERSION"
+    ],
+    "vertical": [
+      "VERTICAL"
+    ],
+    "very": [
+      "VERY"
+    ],
+    "veteran": [
+      "VETERAN"
+    ],
+    "vex": [
+      "VED",
+      "VEXED"
+    ],
+    "via": [
+      "VIA"
+    ],
+    "victim": [
+      "VICTIM"
+    ],
+    "victory": [
+      "VICTORY"
+    ],
+    "video": [
+      "VIDEO"
+    ],
+    "view": [
+      "VIEW"
+    ],
+    "viewpoint": [
+      "VIEWPOINT"
+    ],
+    "village": [
+      "VILLAGE"
+    ],
+    "violate": [
+      "VIOLATE"
+    ],
+    "violence": [
+      "VIOLENCE"
+    ],
+    "violent": [
+      "VIOLENTLY"
+    ],
+    "virtual": [
+      "VIRTUALLY"
+    ],
+    "virtue": [
+      "VIRTUE"
+    ],
+    "virus": [
+      "VIRUS"
+    ],
+    "visible": [
+      "VISIBLE"
+    ],
+    "vision": [
+      "VISION"
+    ],
+    "visit": [
+      "VISIT"
+    ],
+    "visitor": [
+      "VISITOR"
+    ],
+    "visual": [
+      "VISUAL"
+    ],
+    "vital": [
+      "VITAL"
+    ],
+    "vivid": [
+      "VIVIDLY"
+    ],
+    "vocabulary": [
+      "VOCABULARY"
+    ],
+    "vocal": [
+      "VOCALLY"
+    ],
+    "voice": [
+      "VOICE"
+    ],
+    "volcano": [
+      "VOLCANO"
+    ],
+    "volleyball": [
+      "VOLLEYBALL"
+    ],
+    "volume": [
+      "VOLUME"
+    ],
+    "voluntary": [
+      "VOLUNTARILY"
+    ],
+    "volunteer": [
+      "VOLUNTEER"
+    ],
+    "vote": [
+      "VOTE"
+    ],
+    "vow": [
+      "VOW"
+    ],
+    "voyage": [
+      "VOYAGE"
+    ],
+    "wage": [
+      "WAGE"
+    ],
+    "wait": [
+      "WAIT"
+    ],
+    "waiter": [
+      "WAITER"
+    ],
+    "wake": [
+      "WOKE",
+      "WOKEN"
+    ],
+    "walk": [
+      "WALK",
+      "WALKED"
+    ],
+    "wall": [
+      "WALLED"
+    ],
+    "wander": [
+      "WANDER"
+    ],
+    "want": [
+      "WANTED",
+      "WANT"
+    ],
+    "war": [
+      "WAR"
+    ],
+    "ward": [
+      "WARD"
+    ],
+    "warm": [
+      "WARMLY"
+    ],
+    "warn": [
+      "WARNED"
+    ],
+    "wash": [
+      "WASHED"
+    ],
+    "waste": [
+      "WASTE"
+    ],
+    "watch": [
+      "WATCHED",
+      "WATCH"
+    ],
+    "water": [
+      "WATERED"
+    ],
+    "wave": [
+      "WAVED"
+    ],
+    "way": [
+      "WAY"
+    ],
+    "weak": [
+      "WEAK"
+    ],
+    "wealth": [
+      "WEALTH"
+    ],
+    "weapon": [
+      "WEAPON"
+    ],
+    "wear": [
+      "WORE",
+      "WORN"
+    ],
+    "weather": [
+      "WEATHER"
+    ],
+    "weave": [
+      "WOVE",
+      "WOVEN"
+    ],
+    "web": [
+      "WEB"
+    ],
+    "website": [
+      "WEBSITE"
+    ],
+    "wedding": [
+      "WEDDING"
+    ],
+    "weed": [
+      "WEED"
+    ],
+    "week": [
+      "WEEK"
+    ],
+    "weekday": [
+      "WEEKDAY"
+    ],
+    "weekend": [
+      "WEEKEND"
+    ],
+    "weekly": [
+      "WEEKLY"
+    ],
+    "weigh": [
+      "WEIGHT",
+      "WEIGH"
+    ],
+    "weight": [
+      "WEIGHT"
+    ],
+    "welcome": [
+      "WELCOMED",
+      "WELCOME"
+    ],
+    "welfare": [
+      "WELFARE"
+    ],
+    "well": [
+      "WELL"
+    ],
+    "west": [
+      "WESTERN"
+    ],
+    "western": [
+      "WESTERN"
+    ],
+    "wet": [
+      "WET",
+      "WETTED"
+    ],
+    "whale": [
+      "WHALE"
+    ],
+    "what": [
+      "WHAT"
+    ],
+    "whatever": [
+      "WHATEVER"
+    ],
+    "wheat": [
+      "WHEAT"
+    ],
+    "wheel": [
+      "WHEEL"
+    ],
+    "when": [
+      "WHEN"
+    ],
+    "whenever": [
+      "WHENEVER"
+    ],
+    "where": [
+      "WHERE"
+    ],
+    "wherever": [
+      "WHEREVER"
+    ],
+    "whether": [
+      "WHETHER"
+    ],
+    "which": [
+      "WHICH"
+    ],
+    "while": [
+      "WHILE"
+    ],
+    "whisper": [
+      "WHISPERED"
+    ],
+    "white": [
+      "WHITE"
+    ],
+    "who": [
+      "WHO"
+    ],
+    "whoever": [
+      "WHOEVER"
+    ],
+    "whole": [
+      "WHOLLY"
+    ],
+    "whom": [
+      "WHOM"
+    ],
+    "whose": [
+      "WHOSE"
+    ],
+    "why": [
+      "WHY"
+    ],
+    "wide": [
+      "WIDE"
+    ],
+    "widow": [
+      "WIDOW"
+    ],
+    "width": [
+      "WIDTH"
+    ],
+    "wife": [
+      "WIVES"
+    ],
+    "wild": [
+      "WILD"
+    ],
+    "will": [
+      "WILL"
+    ],
+    "willing": [
+      "WILLINGLY"
+    ],
+    "win": [
+      "WON",
+      "WINNER",
+      "WINNING"
+    ],
+    "wind": [
+      "WINDY"
+    ],
+    "window": [
+      "WINDOW"
+    ],
+    "wine": [
+      "WINE"
+    ],
+    "wing": [
+      "WINGED"
+    ],
+    "winner": [
+      "WINNER"
+    ],
+    "winter": [
+      "WINTER"
+    ],
+    "wire": [
+      "WIRED"
+    ],
+    "wisdom": [
+      "WISDOM"
+    ],
+    "wise": [
+      "WISE"
+    ],
+    "wish": [
+      "WISHED"
+    ],
+    "with": [
+      "WITH"
+    ],
+    "withdraw": [
+      "WITHDREW",
+      "WITHDRAWN"
+    ],
+    "within": [
+      "WITHIN"
+    ],
+    "without": [
+      "WITHOUT"
+    ],
+    "witness": [
+      "WITNESSED"
+    ],
+    "woman": [
+      "WOMEN"
+    ],
+    "wonder": [
+      "WONDER",
+      "WONDERFUL"
+    ],
+    "wonderful": [
+      "WONDERFULLY"
+    ],
+    "wood": [
+      "WOOD"
+    ],
+    "wooden": [
+      "WOODEN"
+    ],
+    "wool": [
+      "WOOL"
+    ],
+    "word": [
+      "WORD"
+    ],
+    "work": [
+      "WORKED"
+    ],
+    "worker": [
+      "WORKER"
+    ],
+    "world": [
+      "WORLD"
+    ],
+    "worm": [
+      "WORM"
+    ],
+    "worried": [
+      "WORRIEDLY"
+    ],
+    "worry": [
+      "WORRY",
+      "WORRIED"
+    ],
+    "worse": [
+      "WORSE"
+    ],
+    "worship": [
+      "WORSHIPPED",
+      "WORSHIP"
+    ],
+    "worst": [
+      "WORST"
+    ],
+    "worth": [
+      "WORTH"
+    ],
+    "worthwhile": [
+      "WORTHWHILE"
+    ],
+    "worthy": [
+      "WORTHILY"
+    ],
+    "would": [
+      "WOULD"
+    ],
+    "wound": [
+      "WOUNDED"
+    ],
+    "wrap": [
+      "WRAPPED"
+    ],
+    "wreck": [
+      "WRECKED"
+    ],
+    "wrist": [
+      "WRIST"
+    ],
+    "write": [
+      "WRITING",
+      "WRITTEN",
+      "WROTE",
+      "WRITER"
+    ],
+    "writer": [
+      "WRITER"
+    ],
+    "writing": [
+      "WRITING"
+    ],
+    "wrong": [
+      "WRONG"
+    ],
+    "yard": [
+      "YARD"
+    ],
+    "yeah": [
+      "YEAH"
+    ],
+    "year": [
+      "YEAR"
+    ],
+    "yearly": [
+      "YEARLY"
+    ],
+    "yell": [
+      "YELL"
+    ],
+    "yellow": [
+      "YELLOW"
+    ],
+    "yes": [
+      "YES"
+    ],
+    "yet": [
+      "YET"
+    ],
+    "yield": [
+      "YIELD"
+    ],
+    "you": [
+      "YOU"
+    ],
+    "young": [
+      "YOUNG"
+    ],
+    "your": [
+      "YOUR"
+    ],
+    "yours": [
+      "YOURS"
+    ],
+    "yourself": [
+      "YOURSELVES",
+      "YOURSELF"
+    ],
+    "youth": [
+      "YOUTH"
+    ],
+    "zero": [
+      "ZERO"
+    ],
+    "zone": [
+      "ZONE"
+    ],
+    "zoom": [
+      "ZOOM"
+    ],
+    "actual": [
+      "ACTUALLY"
+    ],
+    "apparent": [
+      "APPARENTLY"
+    ],
+    "appropriate": [
+      "APPROPRIATELY"
+    ],
+    "automatic": [
+      "AUTOMATICALLY"
+    ],
+    "brief": [
+      "BRIEFLY"
+    ],
+    "certain": [
+      "CERTAINLY"
+    ],
+    "complete": [
+      "COMPLETELY"
+    ],
+    "confident": [
+      "CONFIDENTLY"
+    ],
+    "convincing": [
+      "CONVINCINGLY"
+    ],
+    "creative": [
+      "CREATIVELY"
+    ],
+    "curious": [
+      "CURIOUSLY"
+    ],
+    "dangerous": [
+      "DANGEROUSLY"
+    ],
+    "different": [
+      "DIFFERENTLY"
+    ],
+    "direct": [
+      "DIRECTLY"
+    ],
+    "dramatic": [
+      "DRAMATIC"
+    ],
+    "eager": [
+      "EAGERLY"
+    ],
+    "economic": [
+      "ECONOMIC"
+    ],
+    "effective": [
+      "EFFECTIVELY"
+    ],
+    "efficient": [
+      "EFFICIENTLY"
+    ],
+    "elegant": [
+      "ELEGANTLY"
+    ],
+    "essential": [
+      "ESSENTIALLY"
+    ],
+    "evident": [
+      "EVIDENTLY"
+    ],
+    "exact": [
+      "EXACTLY"
+    ],
+    "extreme": [
+      "EXTREMELY"
+    ],
+    "faithful": [
+      "FAITHFULLY"
+    ],
+    "famous": [
+      "FAMOUSLY"
+    ],
+    "final": [
+      "FINALLY"
+    ],
+    "firm": [
+      "FIRMLY"
+    ],
+    "foolish": [
+      "FOOLISHLY"
+    ],
+    "formal": [
+      "FORMALLY"
+    ],
+    "fortunate": [
+      "FORTUNATELY"
+    ],
+    "frank": [
+      "FRANKLY"
+    ],
+    "frequent": [
+      "FREQUENTLY"
+    ],
+    "general": [
+      "GENERALLY"
+    ],
+    "generous": [
+      "GENEROUSLY"
+    ],
+    "gentle": [
+      "GENTLY"
+    ],
+    "genuine": [
+      "GENUINELY"
+    ],
+    "glad": [
+      "GLADLY"
+    ],
+    "gradual": [
+      "GRADUALLY"
+    ],
+    "grateful": [
+      "GRATEFULLY"
+    ],
+    "great": [
+      "GREATLY"
+    ],
+    "happy": [
+      "HAPPILY"
+    ],
+    "harsh": [
+      "HARSHLY"
+    ],
+    "healthy": [
+      "HEALTHILY"
+    ],
+    "helpful": [
+      "HELPFULLY"
+    ],
+    "honest": [
+      "HONESTLY"
+    ],
+    "hopeful": [
+      "HOPEFULLY"
+    ],
+    "horrible": [
+      "HORRIBLE"
+    ],
+    "huge": [
+      "HUGELY"
+    ],
+    "ideal": [
+      "IDEALLY"
+    ],
+    "ignorant": [
+      "IGNORANTLY"
+    ],
+    "immediate": [
+      "IMMEDIATELY"
+    ],
+    "important": [
+      "IMPORTANTLY"
+    ],
+    "impressive": [
+      "IMPRESSIVELY"
+    ],
+    "incredible": [
+      "INCREDIBLY"
+    ],
+    "independent": [
+      "INDEPENDENTLY"
+    ],
+    "inevitable": [
+      "INEVITABLY"
+    ],
+    "instant": [
+      "INSTANTLY"
+    ],
+    "intense": [
+      "INTENSELY"
+    ],
+    "intention": [
+      "INTENTIONALLY"
+    ],
+    "interesting": [
+      "INTERESTINGLY"
+    ],
+    "international": [
+      "INTERNATIONAL"
+    ],
+    "just": [
+      "JUSTLY"
+    ],
+    "kind": [
+      "KINDLY"
+    ],
+    "likely": [
+      "LIKELY"
+    ],
+    "logical": [
+      "LOGICALLY"
+    ],
+    "loud": [
+      "LOUDLY"
+    ],
+    "lucky": [
+      "LUCKILY"
+    ],
+    "medical": [
+      "MEDICAL"
+    ],
+    "mental": [
+      "MENTAL"
+    ],
+    "merely": [
+      "MERELY"
+    ],
+    "miserable": [
+      "MISERABLY"
+    ],
+    "modern": [
+      "MODERN"
+    ],
+    "modest": [
+      "MODESTLY"
+    ],
+    "natural": [
+      "NATURAL"
+    ],
+    "necessary": [
+      "NECESSARILY"
+    ],
+    "negative": [
+      "NEGATIVELY"
+    ],
+    "nervous": [
+      "NERVOUSLY"
+    ],
+    "nice": [
+      "NICELY"
+    ],
+    "noisy": [
+      "NOISILY"
+    ],
+    "normal": [
+      "NORMAL",
+      "NORMALLY"
+    ],
+    "obvious": [
+      "OBVIOUSLY"
+    ],
+    "official": [
+      "OFFICIAL"
+    ],
+    "open": [
+      "OPENLY",
+      "OPENING"
+    ],
+    "optimistic": [
+      "OPTIMISTIC"
+    ],
+    "painful": [
+      "PAINFULLY"
+    ],
+    "particular": [
+      "PARTICULARLY"
+    ],
+    "passive": [
+      "PASSIVELY"
+    ],
+    "patient": [
+      "PATIENTLY"
+    ],
+    "peaceful": [
+      "PEACEFULLY"
+    ],
+    "perfect": [
+      "PERFECTLY"
+    ],
+    "pleasant": [
+      "PLEASANTLY"
+    ],
+    "polite": [
+      "POLITELY"
+    ],
+    "poor": [
+      "POORLY"
+    ],
+    "popular": [
+      "POPULARLY"
+    ],
+    "positive": [
+      "POSITIVELY"
+    ],
+    "possible": [
+      "POSSIBLE"
+    ],
+    "practical": [
+      "PRACTICAL"
+    ],
+    "precise": [
+      "PRECISELY"
+    ],
+    "pretty": [
+      "PRETILY"
+    ],
+    "previous": [
+      "PREVIOUSLY"
+    ],
+    "primary": [
+      "PRIMARILY"
+    ],
+    "private": [
+      "PRIVATELY"
+    ],
+    "probable": [
+      "PROBABLY"
+    ],
+    "productive": [
+      "PRODUCTIVELY"
+    ],
+    "professional": [
+      "PROFESSIONALLY"
+    ],
+    "prominent": [
+      "PROMINENTLY"
+    ],
+    "prompt": [
+      "PROMPTLY"
+    ],
+    "proper": [
+      "PROPERLY"
+    ],
+    "proud": [
+      "PROUDLY"
+    ],
+    "public": [
+      "PUBLICLY"
+    ],
+    "punctual": [
+      "PUNCTUALLY"
+    ],
+    "pure": [
+      "PURELY"
+    ],
+    "random": [
+      "RANDOMLY"
+    ],
+    "rare": [
+      "RARELY"
+    ],
+    "rational": [
+      "RATIONALLY"
+    ],
+    "ready": [
+      "READILY"
+    ],
+    "real": [
+      "REALLY"
+    ],
+    "reasonable": [
+      "REASONABLE"
+    ],
+    "recent": [
+      "RECENTLY"
+    ],
+    "regular": [
+      "REGULARLY"
+    ],
+    "relaxed": [
+      "RELAXEDLY"
+    ],
+    "relevant": [
+      "RELEVANTLY"
+    ],
+    "reliable": [
+      "RELIABLE"
+    ],
+    "relieved": [
+      "RELIEVEDLY"
+    ],
+    "religious": [
+      "RELIGIOUSLY"
+    ],
+    "reluctant": [
+      "RELUCTANTLY"
+    ],
+    "remarkable": [
+      "REMARKABLE"
+    ],
+    "remote": [
+      "REMOTELY"
+    ],
+    "repeated": [
+      "REPEATEDLY"
+    ],
+    "reserved": [
+      "RESERVEDLY"
+    ],
+    "resolute": [
+      "RESOLUTELY"
+    ],
+    "respectable": [
+      "RESPECTABLE"
+    ],
+    "respectful": [
+      "RESPECTFULLY"
+    ],
+    "responsible": [
+      "RESPONSIBLY"
+    ],
+    "restless": [
+      "RESTLESSLY"
+    ],
+    "rich": [
+      "RICHLY"
+    ],
+    "ridiculous": [
+      "RIDICULOUSLY"
+    ],
+    "right": [
+      "RIGHTLY"
+    ],
+    "rude": [
+      "RUDELY"
+    ],
+    "sad": [
+      "SADLY"
+    ],
+    "safe": [
+      "SAFELY"
+    ],
+    "satisfied": [
+      "SATISFIEDLY"
+    ],
+    "scared": [
+      "SCAREDLY"
+    ],
+    "secret": [
+      "SECRETLY"
+    ],
+    "selfish": [
+      "SELFISHLY"
+    ],
+    "sensible": [
+      "SENSIBLY"
+    ],
+    "sensitive": [
+      "SENSITIVELY"
+    ],
+    "serene": [
+      "SERENELY"
+    ],
+    "serious": [
+      "SERIOUSLY"
+    ],
+    "severe": [
+      "SEVERELY"
+    ],
+    "shallow": [
+      "SHALLOWLY"
+    ],
+    "shameful": [
+      "SHAMEFULLY"
+    ],
+    "short": [
+      "SHORTLY"
+    ],
+    "shy": [
+      "SHYLY"
+    ],
+    "sick": [
+      "SICKLY"
+    ],
+    "significant": [
+      "SIGNIFICANTLY"
+    ],
+    "silent": [
+      "SILENTLY"
+    ],
+    "silly": [
+      "SILLILY"
+    ],
+    "sincere": [
+      "SINCERELY"
+    ],
+    "slight": [
+      "SLIGHTLY"
+    ],
+    "smart": [
+      "SMARTLY"
+    ],
+    "sober": [
+      "SOBERLY"
+    ],
+    "social": [
+      "SOCIALIST"
+    ],
+    "soft": [
+      "SOFTLY"
+    ],
+    "solemn": [
+      "SOLEMNLY"
+    ],
+    "solid": [
+      "SOLIDLY"
+    ],
+    "specific": [
+      "SPECIFICALLY"
+    ],
+    "spectacular": [
+      "SPECTACULARLY"
+    ],
+    "speedy": [
+      "SPEEDILY"
+    ],
+    "spontaneous": [
+      "SPONTANEOUSLY"
+    ],
+    "stable": [
+      "STABLY"
+    ],
+    "steady": [
+      "STEADILY"
+    ],
+    "strange": [
+      "STRANGELY"
+    ],
+    "strict": [
+      "STRICTLY"
+    ],
+    "strong": [
+      "STRONGLY"
+    ],
+    "stubborn": [
+      "STUBBORNLY"
+    ],
+    "stunning": [
+      "STUNNINGLY"
+    ],
+    "subjective": [
+      "SUBJECTIVELY"
+    ],
+    "substantial": [
+      "SUBSTANTIALLY"
+    ],
+    "subtle": [
+      "SUBTLY"
+    ],
+    "successful": [
+      "SUCCESSFULLY"
+    ],
+    "sudden": [
+      "SUDDENLY"
+    ],
+    "sufficient": [
+      "SUFFICIENTLY"
+    ],
+    "suitable": [
+      "SUITABLY"
+    ],
+    "sunny": [
+      "SUNNILY"
+    ],
+    "super": [
+      "SUPER"
+    ],
+    "superficial": [
+      "SUPERFICIALLY"
+    ],
+    "sure": [
+      "SURELY"
+    ],
+    "surprised": [
+      "SURPRISEDLY"
+    ],
+    "surprising": [
+      "SURPRISINGLY"
+    ],
+    "suspicious": [
+      "SUSPICIOUSLY"
+    ],
+    "swift": [
+      "SWIFTLY"
+    ],
+    "symbolic": [
+      "SYMBOLICALLY"
+    ],
+    "sympathetic": [
+      "SYMPATHETICALLY"
+    ],
+    "systematic": [
+      "SYSTEMATIC"
+    ],
+    "tasty": [
+      "TASTILY"
+    ],
+    "thrilled": [
+      "THRILLEDLY"
+    ],
+    "thrilling": [
+      "THRILLINGLY"
+    ],
+    "tiring": [
+      "TIRINGLY"
+    ],
+    "tolerant": [
+      "TOLERANTLY"
+    ],
+    "tragic": [
+      "TRAGIC"
+    ],
+    "tremendous": [
+      "TREMENDOUSLY"
+    ],
+    "triumphant": [
+      "TRIUMPHANTLY"
+    ],
+    "troublesome": [
+      "TROUBLESOMELY"
+    ],
+    "trustworthy": [
+      "TRUSTWORTHILY"
+    ],
+    "truthful": [
+      "TRUTHFULLY"
+    ],
+    "understanding": [
+      "UNDERSTANDINGLY"
+    ],
+    "useful": [
+      "USEFULLY"
+    ],
+    "vulnerable": [
+      "VULNERABLY"
+    ],
+    "wealthy": [
+      "WEALTHILY",
+      "WEALTHY"
+    ],
+    "wicked": [
+      "WICKEDLY"
+    ],
+    "widespread": [
+      "WIDESPREAD"
+    ],
+    "worrying": [
+      "WORRYINGLY"
+    ],
+    "youthful": [
+      "YOUTHFULLY"
+    ],
+    "finance": [
+      "FINANCIAL"
+    ],
+    "history": [
+      "HISTORICAL"
+    ],
+    "medicine": [
+      "MEDICAL"
+    ],
+    "politics": [
+      "POLITICAL"
+    ],
+    "science": [
+      "SCIENTIFIC"
+    ],
+    "culture": [
+      "CULTURAL"
+    ],
+    "nature": [
+      "NATURAL"
+    ],
+    "industry": [
+      "INDUSTRIAL"
+    ],
+    "economy": [
+      "ECONOMIC"
+    ],
+    "geography": [
+      "GEOGRAPHICAL"
+    ],
+    "music": [
+      "MUSICAL"
+    ],
+    "decoration": [
+      "DECORATIVE"
+    ],
+    "disaster": [
+      "DISASTROUS"
+    ],
+    "celebration": [
+      "CELEBRATION"
+    ],
+    "education": [
+      "EDUCATIONAL"
+    ],
+    "competition": [
+      "COMPETITIVE"
+    ],
+    "generation": [
+      "GENERATIONAL"
+    ],
+    "pollution": [
+      "POLLUTED"
+    ],
+    "construction": [
+      "CONSTRUCTIVE"
+    ],
+    "production": [
+      "PRODUCTIVE"
+    ],
+    "introduction": [
+      "INTRODUCTORY"
+    ],
+    "instruction": [
+      "INSTRUCTIVE"
+    ],
+    "information": [
+      "INFORMATIVE"
+    ],
+    "emotion": [
+      "EMOTIONAL"
+    ],
+    "rise": [
+      "ROSE",
+      "RISEN"
+    ],
+    "arise": [
+      "AROSE",
+      "ARISEN"
+    ],
+    "awake": [
+      "AWOKE",
+      "AWAKEN"
+    ],
+    "bear": [
+      "BORE",
+      "BORNE"
+    ],
+    "beat": [
+      "BEAT",
+      "BEATEN"
+    ],
+    "bend": [
+      "BENT"
+    ],
+    "bet": [
+      "BET"
+    ],
+    "bid": [
+      "BID"
+    ],
+    "bite": [
+      "BIT",
+      "BITTEN"
+    ],
+    "bleed": [
+      "BLED"
+    ],
+    "bless": [
+      "BLESSED"
+    ],
+    "blow": [
+      "BLEW",
+      "BLOWN"
+    ],
+    "breed": [
+      "BRED"
+    ],
+    "broadcast": [
+      "BROADCAST"
+    ],
+    "burst": [
+      "BURST"
+    ],
+    "cast": [
+      "CAST"
+    ],
+    "clothe": [
+      "CLAD",
+      "CLOTHED"
+    ],
+    "cost": [
+      "COST"
+    ],
+    "creep": [
+      "CREPT"
+    ],
+    "cut": [
+      "CUT"
+    ],
+    "dare": [
+      "DARED"
+    ],
+    "deal": [
+      "DEALT"
+    ],
+    "dig": [
+      "DUG"
+    ],
+    "dive": [
+      "DIVED",
+      "DOVE"
+    ],
+    "draw": [
+      "DREW",
+      "DRAWN"
+    ],
+    "dream": [
+      "DREAMFUL"
+    ],
+    "dress": [
+      "DRESSED"
+    ],
+    "drink": [
+      "DRANK",
+      "DRUNK"
+    ],
+    "drive": [
+      "DROVE",
+      "DRIVEN"
+    ],
+    "dwell": [
+      "DWELT"
+    ],
+    "eat": [
+      "ATE",
+      "EATEN"
+    ],
+    "fall": [
+      "FELL",
+      "FALLEN"
+    ],
+    "feed": [
+      "FED"
+    ],
+    "feel": [
+      "FELT"
+    ],
+    "fight": [
+      "FOUGHT"
+    ],
+    "find": [
+      "FOUND"
+    ],
+    "flee": [
+      "FLED"
+    ],
+    "fly": [
+      "FLEW",
+      "FLOWN"
+    ],
+    "forbid": [
+      "FORBADE",
+      "FORBIDDEN"
+    ],
+    "forecast": [
+      "FORECAST"
+    ],
+    "forget": [
+      "FORGETFUL"
+    ],
+    "forgive": [
+      "FORGAVE",
+      "FORGIVEN"
+    ],
+    "forsake": [
+      "FORSOOK",
+      "FORSAKEN"
+    ],
+    "freeze": [
+      "FROZE",
+      "FROZEN"
+    ],
+    "greet": [
+      "GREETED"
+    ],
+    "grind": [
+      "GROUND"
+    ],
+    "grow": [
+      "GREW",
+      "GROWN"
+    ],
+    "hang": [
+      "HUNG"
+    ],
+    "have": [
+      "HAD"
+    ],
+    "hear": [
+      "HEARD"
+    ],
+    "hide": [
+      "HID",
+      "HIDDEN"
+    ],
+    "hit": [
+      "HIT"
+    ],
+    "hold": [
+      "HELD"
+    ],
+    "hurt": [
+      "HURT"
+    ],
+    "keep": [
+      "KEPT"
+    ],
+    "kneel": [
+      "KNELT"
+    ],
+    "knit": [
+      "KNIT"
+    ],
+    "know": [
+      "KNOWLEDGE",
+      "KNEW",
+      "KNOWN"
+    ],
+    "lay": [
+      "LAID"
+    ],
+    "lead": [
+      "LED"
+    ],
+    "lean": [
+      "LEANT",
+      "LEANED"
+    ],
+    "leap": [
+      "LEAPT",
+      "LEAPED"
+    ],
+    "learn": [
+      "LEARNT",
+      "LEARNED",
+      "LEARNING"
+    ],
+    "leave": [
+      "LEFT"
+    ],
+    "lend": [
+      "LENT"
+    ],
+    "let": [
+      "LET"
+    ],
+    "lie": [
+      "LAY",
+      "LAIN"
+    ],
+    "light": [
+      "LIT",
+      "LIGHTED"
+    ],
+    "lose": [
+      "LOST"
+    ],
+    "make": [
+      "MADE"
+    ],
+    "mean": [
+      "MEANT"
+    ],
+    "meet": [
+      "MET"
+    ],
+    "mislead": [
+      "MISLED"
+    ],
+    "mistake": [
+      "MISTOOK",
+      "MISTAKEN"
+    ],
+    "misunderstand": [
+      "MISUNDERSTOOD"
+    ],
+    "mow": [
+      "MOWED",
+      "MOWN"
+    ],
+    "overcome": [
+      "OVERCAME",
+      "OVERCOME"
+    ],
+    "overhear": [
+      "OVERHEARD"
+    ],
+    "oversleep": [
+      "OVERSLEPT"
+    ],
+    "pay": [
+      "PAID"
+    ],
+    "put": [
+      "PUT"
+    ],
+    "quit": [
+      "QUIT"
+    ],
+    "read": [
+      "READ"
+    ],
+    "rebuild": [
+      "REBUILT"
+    ],
+    "relay": [
+      "RELAID"
+    ],
+    "remake": [
+      "REMAKE"
+    ],
+    "rend": [
+      "RENT"
+    ],
+    "rid": [
+      "RID"
+    ],
+    "ride": [
+      "RODE",
+      "RIDDEN"
+    ],
+    "ring": [
+      "RANG",
+      "RUNG"
+    ],
+    "run": [
+      "RAN",
+      "RUN"
+    ],
+    "saw": [
+      "SAWED",
+      "SAWN"
+    ],
+    "say": [
+      "SAID"
+    ],
+    "see": [
+      "SAW",
+      "SEEN"
+    ],
+    "seek": [
+      "SOUGHT"
+    ],
+    "sell": [
+      "SOLD"
+    ],
+    "send": [
+      "SENT"
+    ],
+    "set": [
+      "SET"
+    ],
+    "sew": [
+      "SEWED",
+      "SEWN"
+    ],
+    "shake": [
+      "SHOOK",
+      "SHAKEN"
+    ],
+    "shall": [
+      "SHOULD"
+    ],
+    "shave": [
+      "SHAVED",
+      "SHAVEN"
+    ],
+    "shear": [
+      "SHORE",
+      "SHORN"
+    ],
+    "shed": [
+      "SHED"
+    ],
+    "shine": [
+      "SHONE",
+      "SHINED"
+    ],
+    "shoe": [
+      "SHOD"
+    ],
+    "shoot": [
+      "SHOT"
+    ],
+    "show": [
+      "SHOWED",
+      "SHOWN"
+    ],
+    "shrink": [
+      "SHRANK",
+      "SHRUNK"
+    ],
+    "shut": [
+      "SHUT"
+    ],
+    "sing": [
+      "SANG",
+      "SUNG"
+    ],
+    "sink": [
+      "SANK",
+      "SUNK"
+    ],
+    "sit": [
+      "SEAT",
+      "SAT"
+    ],
+    "ski": [
+      "SKIED",
+      "SKI"
+    ],
+    "slay": [
+      "SLEW",
+      "SLAIN"
+    ],
+    "sleep": [
+      "SLEPT"
+    ],
+    "slide": [
+      "SLID"
+    ],
+    "sling": [
+      "SLUNG"
+    ],
+    "slit": [
+      "SLIT"
+    ],
+    "smell": [
+      "SMELT",
+      "SMELLED"
+    ],
+    "smile": [
+      "SMILE",
+      "SMILED"
+    ],
+    "smite": [
+      "SMOTE",
+      "SMITTEN"
+    ],
+    "snake": [
+      "SNAKED"
+    ],
+    "sneak": [
+      "SNUCK"
+    ],
+    "sow": [
+      "SOWED",
+      "SOWN"
+    ],
+    "speak": [
+      "SPOKEN",
+      "SPEECH",
+      "SPOKE"
+    ],
+    "speed": [
+      "SPED",
+      "SPEEDED"
+    ],
+    "spell": [
+      "SPELT",
+      "SPELLED"
+    ],
+    "spend": [
+      "SPENDING",
+      "SPENT"
+    ],
+    "spill": [
+      "SPILT",
+      "SPILLED"
+    ],
+    "spin": [
+      "SPUN"
+    ],
+    "spit": [
+      "SPAT",
+      "SPIT"
+    ],
+    "split": [
+      "SPLIT"
+    ],
+    "spoil": [
+      "SPOILT",
+      "SPOILED"
+    ],
+    "spread": [
+      "SPREAD"
+    ],
+    "spring": [
+      "SPRANG",
+      "SPRUNG"
+    ],
+    "stand": [
+      "STANDING",
+      "STOOD"
+    ],
+    "steal": [
+      "STOLE",
+      "STOLEN"
+    ],
+    "stick": [
+      "STUCK"
+    ],
+    "sting": [
+      "STUNG"
+    ],
+    "stink": [
+      "STANK",
+      "STUNK"
+    ],
+    "strew": [
+      "STREWED",
+      "STREWN"
+    ],
+    "stride": [
+      "STRODE",
+      "STRIDDEN"
+    ],
+    "string": [
+      "STRUNG"
+    ],
+    "strip": [
+      "STRIPPED"
+    ],
+    "strive": [
+      "STROVE",
+      "STRIVEN"
+    ],
+    "sweat": [
+      "SWEAT",
+      "SWEATED"
+    ],
+    "swell": [
+      "SWELLED",
+      "SWOLLEN"
+    ],
+    "swing": [
+      "SWUNG"
+    ],
+    "take": [
+      "TOOK",
+      "TAKEN"
+    ],
+    "teach": [
+      "TAUGHT",
+      "TEACHING"
+    ],
+    "tear": [
+      "TORE",
+      "TORN"
+    ],
+    "tell": [
+      "TOLD"
+    ],
+    "think": [
+      "THOUGHT",
+      "THINKING"
+    ],
+    "throw": [
+      "THREW",
+      "THROWN"
+    ],
+    "thrust": [
+      "THRUST"
+    ],
+    "thwake": [
+      "THWACKED"
+    ],
+    "tie": [
+      "TIED"
+    ],
+    "toe": [
+      "TOED"
+    ],
+    "tread": [
+      "TREAD",
+      "TROD",
+      "TRODDEN"
+    ],
+    "undo": [
+      "UNDID",
+      "UNDONE"
+    ],
+    "urinate": [
+      "URINATED"
+    ],
+    "use": [
+      "USEFUL",
+      "USAGE",
+      "USE"
+    ],
+    "vie": [
+      "VIED"
+    ],
+    "wade": [
+      "WADED"
+    ],
+    "wed": [
+      "WED",
+      "WEDDED"
+    ],
+    "weep": [
+      "WEPT"
+    ],
+    "wend": [
+      "WENT"
+    ],
+    "whet": [
+      "WHETTED"
+    ],
+    "whistle": [
+      "WHISTLED"
+    ],
+    "withhold": [
+      "WITHELD"
+    ],
+    "withstand": [
+      "WITHSTOOD"
+    ],
+    "woke": [
+      "WOKED"
+    ],
+    "wolf": [
+      "WOLVED"
+    ],
+    "woo": [
+      "WOED"
+    ],
+    "wreak": [
+      "WREAKED",
+      "WROUGHT"
+    ],
+    "wring": [
+      "WRUNG"
+    ],
+    "discover": [
+      "DISCOVERY"
+    ],
+    "east": [
+      "EASTERN"
+    ],
+    "electric": [
+      "ELECTRIC"
+    ],
+    "electricity": [
+      "ELECTRIC"
+    ],
+    "north": [
+      "NORTHERN"
+    ],
+    "south": [
+      "SOUTHERN"
+    ],
+    "center": [
+      "CENTER"
+    ],
+    "centre": [
+      "CENTER"
+    ],
+    "art": [
+      "ARTISTIC"
+    ],
+    "age": [
+      "AGED"
+    ],
+    "cloud": [
+      "CLOUDY"
+    ],
+    "rain": [
+      "RAINY"
+    ],
+    "snow": [
+      "SNOWY"
+    ],
+    "friend": [
+      "FRIENDLY"
+    ],
+    "care": [
+      "CAREFREE"
+    ],
+    "help": [
+      "HELPLESS"
+    ],
+    "harm": [
+      "HARMFUL"
+    ],
+    "pain": [
+      "PAINFUL"
+    ],
+    "beauty": [
+      "BEAUTIFUL"
+    ],
+    "color": [
+      "COLORFUL"
+    ],
+    "colour": [
+      "COLOR"
+    ],
+    "success": [
+      "SUCCESSFUL"
+    ],
+    "danger": [
+      "DANGEROUS"
+    ],
+    "peace": [
+      "PEACEFUL"
+    ],
+    "home": [
+      "HOMELESS"
+    ],
+    "skill": [
+      "SKILLFUL"
+    ],
+    "thank": [
+      "THANKFUL",
+      "THANK"
+    ],
+    "power": [
+      "POWERFUL"
+    ],
+    "play": [
+      "PLAYFUL"
+    ],
+    "faith": [
+      "FAITHFUL"
+    ],
+    "hope": [
+      "HOPEFUL"
+    ],
+    "joy": [
+      "JOYFUL"
+    ],
+    "fear": [
+      "FEARFUL"
+    ],
+    "crime": [
+      "CRIMINAL"
+    ],
+    "accident": [
+      "ACCIDENTAL"
+    ],
+    "nation": [
+      "NATIONAL"
+    ],
+    "physical": [
+      "PHYSICAL"
+    ],
+    "personal": [
+      "PERSONAL"
+    ],
+    "national": [
+      "NATIONAL"
+    ],
+    "central": [
+      "CENTRAL"
+    ],
+    "eastern": [
+      "EASTERN"
+    ],
+    "southern": [
+      "SOUTHERN"
+    ],
+    "northern": [
+      "NORTHERN"
+    ],
+    "ancient": [
+      "ANCIENT",
+      "ANCIENTLY"
+    ],
+    "foreign": [
+      "FOREIGN"
+    ],
+    "rural": [
+      "RURAL"
+    ],
+    "tropical": [
+      "TROPICAL"
+    ],
+    "global": [
+      "GLOBAL"
+    ],
+    "local": [
+      "LOCAL"
+    ],
+    "financial": [
+      "FINANCIAL"
+    ],
+    "educational": [
+      "EDUCATIONAL"
+    ],
+    "cultural": [
+      "CULTURAL"
+    ],
+    "traditional": [
+      "TRADITIONAL"
+    ],
+    "commercial": [
+      "COMMERCIAL"
+    ],
+    "political": [
+      "POLITICAL"
+    ],
+    "theoretical": [
+      "THEORETICAL"
+    ],
+    "historical": [
+      "HISTORICAL"
+    ],
+    "musical": [
+      "MUSICAL"
+    ],
+    "artistic": [
+      "ARTISTIC"
+    ],
+    "athletic": [
+      "ATHLETIC"
+    ],
+    "electronic": [
+      "ELECTRONIC"
+    ],
+    "domestic": [
+      "DOMESTIC"
+    ],
+    "energetic": [
+      "ENERGETIC"
+    ],
+    "fantastic": [
+      "FANTASTIC"
+    ],
+    "magnetic": [
+      "MAGNETIC"
+    ],
+    "organic": [
+      "ORGANIC"
+    ],
+    "plastic": [
+      "PLASTIC"
+    ],
+    "allergic": [
+      "ALLERGIC"
+    ],
+    "allied": [
+      "ALLIED"
+    ],
+    "classic": [
+      "CLASSIC"
+    ],
+    "cosmic": [
+      "COSMIC"
+    ],
+    "democratic": [
+      "DEMOCRATIC"
+    ],
+    "diplomatic": [
+      "DIPLOMATIC"
+    ],
+    "ecological": [
+      "ECOLOGICAL"
+    ],
+    "ethical": [
+      "ETHICAL"
+    ],
+    "genetic": [
+      "GENETIC"
+    ],
+    "heroic": [
+      "HEROIC"
+    ],
+    "ironic": [
+      "IRONIC"
+    ],
+    "lyric": [
+      "LYRIC"
+    ],
+    "magic": [
+      "MAGICAL",
+      "MAGIC"
+    ],
+    "numeric": [
+      "NUMERIC"
+    ],
+    "pessimistic": [
+      "PESSIMISTIC"
+    ],
+    "poetic": [
+      "POETIC"
+    ],
+    "progressive": [
+      "PROGRESSIVE"
+    ],
+    "psychological": [
+      "PSYCHOLOGICAL"
+    ],
+    "rhythmic": [
+      "RHYTHMIC"
+    ],
+    "romantic": [
+      "ROMANTIC"
+    ],
+    "scientific": [
+      "SCIENTIFIC"
+    ],
+    "synthetic": [
+      "SYNTHETIC"
+    ],
+    "therapeutic": [
+      "THERAPEUTIC"
+    ],
+    "toxic": [
+      "TOXIC"
+    ],
+    "dynamic": [
+      "DYNAMIC"
+    ],
+    "bone": [
+      "BONY"
+    ],
+    "apologize": [
+      "APOLOGISE",
+      "APOLOGIZE"
+    ],
+    "organise": [
+      "ORGANIZE"
+    ],
+    "realise": [
+      "REALIZE"
+    ],
+    "recognise": [
+      "RECOGNIZE"
+    ],
+    "analyse": [
+      "ANALYZE"
+    ],
+    "catalogue": [
+      "CATALOG"
+    ],
+    "favour": [
+      "FAVOR"
+    ],
+    "honour": [
+      "HONOR"
+    ],
+    "humour": [
+      "HUMOR"
+    ],
+    "labour": [
+      "LABOR"
+    ],
+    "neighbour": [
+      "NEIGHBOR"
+    ],
+    "behaviour": [
+      "BEHAVIOR"
+    ],
+    "armour": [
+      "ARMOR"
+    ],
+    "clamour": [
+      "CLAMOR"
+    ],
+    "colourful": [
+      "COLORFUL"
+    ],
+    "favourable": [
+      "FAVORABLE"
+    ],
+    "neighbourhood": [
+      "NEIGHBORHOOD"
+    ],
+    "understandable": [
+      "UNDERSTANDABLE"
+    ],
+    "comfortable": [
+      "COMFORTABLE"
+    ],
+    "available": [
+      "AVAILABLE"
+    ],
+    "considerable": [
+      "CONSIDERABLE"
+    ],
+    "believable": [
+      "BELIEVABLE"
+    ],
+    "achievable": [
+      "ACHIEVABLE"
+    ],
+    " countable": [
+      "COUNTABLE"
+    ],
+    "unforgettable": [
+      "UNFORGETTABLE"
+    ],
+    "capable": [
+      "CAPABLE"
+    ],
+    "flexible": [
+      "FLEXIBLE"
+    ],
+    "baggy": [
+      "BAGGIER"
+    ],
+    "cancel": [
+      "CANCELLATION"
+    ],
+    "cash": [
+      "CASHES"
+    ],
+    "changeable": [
+      "CHANGEABLY"
+    ],
+    "cheap": [
+      "CHEAPER",
+      "CHEAPEST"
+    ],
+    "cheerful": [
+      "CHEERFULLY"
+    ],
+    "convince": [
+      "CONVINCING",
+      "CONVICTION"
+    ],
+    "dead": [
+      "DEAD"
+    ],
+    "death": [
+      "DEATHLY"
+    ],
+    "decorate": [
+      "DECORATION"
+    ],
+    "display": [
+      "DISPLAY"
+    ],
+    "donate": [
+      "DONATION"
+    ],
+    "doubtful": [
+      "DOUBTFULLY"
+    ],
+    "dynasty": [
+      "DYNASTIES"
+    ],
+    "either": [
+      "EITHER"
+    ],
+    "exam": [
+      "EXAMINATION"
+    ],
+    "expect": [
+      "EXPECTED",
+      "EXPECTATION"
+    ],
+    "fashionable": [
+      "FASHIONABLY"
+    ],
+    "finish": [
+      "FINISHED"
+    ],
+    "guard": [
+      "GUARD"
+    ],
+    "habit": [
+      "HABIT"
+    ],
+    "illness": [
+      "ILLNESS"
+    ],
+    "image": [
+      "IMAGINE"
+    ],
+    "instrument": [
+      "INSTRUMENT"
+    ],
+    "material": [
+      "MATERIAL"
+    ],
+    "mess": [
+      "MESSY"
+    ],
+    "narrow": [
+      "NARROW"
+    ],
+    "nothing": [
+      "NOTHING"
+    ],
+    "paint": [
+      "PAINT",
+      "PAINTING"
+    ],
+    "path": [
+      "PATH"
+    ],
+    "pottery": [
+      "POTTERY"
+    ],
+    "responsibility": [
+      "RESPONSIBILITY"
+    ],
+    "sample": [
+      "SAMPLE"
+    ],
+    "sculptor": [
+      "SCULPTURE"
+    ],
+    "sea": [
+      "SEA"
+    ],
+    "similar": [
+      "SIMILAR"
+    ],
+    "neither": [
+      "NEITHER"
+    ],
+    "rapid": [
+      "RAPIDLY"
+    ],
+    "interest": [
+      "INTERESTED",
+      "INTERESTING"
+    ],
+    "knife": [
+      "KNIVES"
+    ],
+    "destroy": [
+      "DESTRUCTION"
+    ],
+    "harmony": [
+      "HARMONIES"
+    ],
+    "society": [
+      "SOCIETIES"
+    ],
+    "attract": [
+      "ATTRACTION"
+    ],
+    "build": [
+      "BUILT"
+    ],
+    "catch": [
+      "CAUGHT"
+    ],
+    "come": [
+      "CAME"
+    ],
+    "compare": [
+      "COMPARISON"
+    ],
+    "complain": [
+      "COMPLAINT"
+    ],
+    "consider": [
+      "CONSIDERATION"
+    ],
+    "construct": [
+      "CONSTRUCTION"
+    ],
+    "continue": [
+      "CONTINUATION"
+    ],
+    "decide": [
+      "DECISION"
+    ],
+    "describe": [
+      "DESCRIPTION"
+    ],
+    "discuss": [
+      "DISCUSSION"
+    ],
+    "explain": [
+      "EXPLANATION"
+    ],
+    "invite": [
+      "INVITATION"
+    ],
+    "introduce": [
+      "INTRODUCTION"
+    ],
+    "invent": [
+      "INVENTION"
+    ],
+    "judge": [
+      "JUDGEMENT",
+      "JUDGMENT"
+    ],
+    "laugh": [
+      "LAUGHTER"
+    ],
+    "measure": [
+      "MEASUREMENT"
+    ],
+    "move": [
+      "MOVEMENT"
+    ],
+    "need": [
+      "NEED"
+    ],
+    "organize": [
+      "ORGANIZATION"
+    ],
+    "place": [
+      "PLACE"
+    ],
+    "plan": [
+      "PLANNING"
+    ],
+    "please": [
+      "PLEASURE"
+    ],
+    "practice": [
+      "PRACTICE"
+    ],
+    "reach": [
+      "REACH"
+    ],
+    "repeat": [
+      "REPETITION"
+    ],
+    "report": [
+      "REPORT"
+    ],
+    "retire": [
+      "RETIREMENT"
+    ],
+    "share": [
+      "SHARE"
+    ],
+    "shock": [
+      "SHOCK"
+    ],
+    "simplify": [
+      "SIMPLIFICATION"
+    ],
+    "sound": [
+      "SOUND"
+    ],
+    "start": [
+      "START"
+    ],
+    "state": [
+      "STATEMENT"
+    ],
+    "stop": [
+      "STOP"
+    ]
+  }
+}

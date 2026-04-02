@@ -7,8 +7,34 @@
 
 import json
 import re
+import os
 import requests
 from typing import List, Dict, Any
+from pathlib import Path
+
+
+# 加载核心词汇
+def load_core_vocabulary():
+    """加载核心词汇表"""
+    # 尝试多个可能的路径
+    possible_paths = [
+        Path(__file__).parent.parent / "src" / "data" / "core_vocabulary.json",
+        Path(__file__).parent.parent.parent / "src" / "data" / "core_vocabulary.json",
+        Path(__file__).parent / "src" / "data" / "core_vocabulary.json",
+    ]
+    
+    for vocab_path in possible_paths:
+        if vocab_path.exists():
+            with open(vocab_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+    
+    # 如果找不到文件，返回空字典
+    print(f"⚠️ 未找到核心词汇表文件")
+    return {}
+
+
+# 全局加载核心词汇
+CORE_VOCABULARY = load_core_vocabulary()
 
 
 class ExerciseChecker:
@@ -17,15 +43,20 @@ class ExerciseChecker:
     ZENMUX_API_KEY = "sk-ss-v1-2e83ce9d273c15056b5c39bf95027189eb08e8b5d7ef9552e454853ac5d59449"
     ZENMUX_MODEL = "openai/gpt-4o"
 
-    def __init__(self, use_llm: bool = True):
+    def __init__(self, use_llm: bool = True, grade: str = None):
         """初始化校验器
         
         Args:
             use_llm: 是否使用 LLM 进行语义检查（默认 True）
+            grade: 年级，可选 "grade7" 或 "grade8"
         """
         self.issues = []
         self.use_llm = use_llm
+        self.grade = grade
         self.llm_session = None
+        
+        # 加载该年级的核心词汇
+        self.core_transformations = self._load_grade_transformations(grade)
         
         # 初始化 HTTP 会话
         if use_llm:
@@ -34,6 +65,29 @@ class ExerciseChecker:
                 "Authorization": f"Bearer {self.ZENMUX_API_KEY}",
                 "Content-Type": "application/json"
             })
+    
+    def _load_grade_transformations(self, grade: str = None) -> set:
+        """加载指定年级的词性转换列表"""
+        transformations = set()
+        
+        if not CORE_VOCABULARY:
+            return transformations
+        
+        # 如果没有指定年级，加载所有年级
+        grades_to_load = []
+        if grade:
+            grades_to_load = [grade]
+        else:
+            grades_to_load = list(CORE_VOCABULARY.keys())
+        
+        for g in grades_to_load:
+            if g in CORE_VOCABULARY:
+                vocab = CORE_VOCABULARY[g]
+                for root, forms in vocab.items():
+                    for form in forms:
+                        transformations.add((root.lower(), form.upper()))
+        
+        return transformations
 
     def check_exercise(self, exercise: Dict[str, Any]) -> List[Dict]:
         """检查单道题目"""
@@ -320,63 +374,8 @@ class ExerciseChecker:
                 'suggestion': '词性转换必须有拼写变化，如加后缀或不规则变化'
             })
 
-        # 检查是否是常见的中考词性转换
-        common_transformations = [
-            # 动词→名词
-            ('act', 'ACTION'), ('assist', 'ASSISTANT'), ('advertise', 'ADVERTISEMENT'),
-            ('cancel', 'CANCELLATION'), ('decide', 'DECISION'), ('describe', 'DESCRIPTION'),
-            ('destroy', 'DESTRUCTION'), ('discover', 'DISCOVERY'), ('donate', 'DONATION'),
-            ('explain', 'EXPLANATION'), ('improve', 'IMPROVEMENT'), ('invite', 'INVITATION'),
-            ('judge', 'JUDGMENT'), ('manage', 'MANAGEMENT'), ('measure', 'MEASUREMENT'),
-            ('move', 'MOVEMENT'), ('agree', 'AGREEMENT'), ('amuse', 'AMUSEMENT'),
-            ('achieve', 'ACHIEVEMENT'), ('excite', 'EXCITEMENT'), ('attract', 'ATTRACTION'),
-            ('instruct', 'INSTRUCTION'), ('construct', 'CONSTRUCTION'), ('produce', 'PRODUCTION'),
-            ('introduce', 'INTRODUCTION'), ('educate', 'EDUCATION'), ('celebrate', 'CELEBRATION'),
-            ('pollute', 'POLLUTION'), ('operate', 'OPERATION'), ('organize', 'ORGANIZATION'),
-            ('translate', 'TRANSLATION'), ('communicate', 'COMMUNICATION'),
-            # 动词→形容词（过去分词）
-            ('excite', 'EXCITED'), ('interest', 'INTERESTED'), ('surprise', 'SURPRISED'),
-            ('worry', 'WORRIED'), ('tire', 'TIRED'), ('amuse', 'AMUSED'),
-            ('confuse', 'CONFUSED'), ('frighten', 'FRIGHTENED'), ('bore', 'BORED'),
-            # 动词→副词（加-ly）
-            ('rapid', 'RAPIDLY'), ('sudden', 'SUDDENLY'), ('careful', 'CAREFULLY'),
-            ('usual', 'USUALLY'), ('final', 'FINALLY'), ('real', 'REALLY'),
-            ('polite', 'POLITELY'), ('safe', 'SAFELY'), ('easy', 'EASILY'),
-            ('happy', 'HAPPILY'), ('angry', 'ANGRILY'), ('heavy', 'HEAVILY'),
-            ('noisy', 'NOISILY'), ('careless', 'CARELESSLY'), ('necessary', 'NECESSARILY'),
-            ('possible', 'POSSIBLY'), ('probable', 'PROBABLY'), ('complete', 'COMPLETELY'),
-            ('exact', 'EXACTLY'), ('serious', 'SERIOUSLY'), ('beautiful', 'BEAUTIFULLY'),
-            ('careful', 'CAREFULLY'), ('wonderful', 'WONDERFULLY'), ('meaningful', 'MEANINGFULLY'),
-            ('cheerful', 'CHEERFULLY'), ('changeable', 'CHANGEABLY'), ('dramatic', 'DRAMATICALLY'),
-            ('economic', 'ECONOMICALLY'), ('medical', 'MEDICALLY'), ('financial', 'FINANCIALLY'),
-            # 形容词→比较级/最高级
-            ('happy', 'HAPPIER'), ('happy', 'HAPPIEST'), ('big', 'BIGGER'), ('big', 'BIGGEST'),
-            ('thin', 'THINNER'), ('thin', 'THINNEST'), ('hot', 'HOTTER'), ('hot', 'HOTTEST'),
-            ('clever', 'CLEVERER'), ('clever', 'CLEVEREST'), ('friendly', 'FRIENDLIER'),
-            ('friendly', 'FRIENDLIEST'), ('easy', 'EASIER'), ('easy', 'EASIEST'),
-            ('difficult', 'MORE DIFFICULT'), ('beautiful', 'MORE BEAUTIFUL'),
-            ('interesting', 'MORE INTERESTING'), ('important', 'MORE IMPORTANT'),
-            ('expensive', 'MORE EXPENSIVE'), ('crowded', 'MORE CROWDED'),
-            # 动词→过去式/过去分词（不规则）
-            ('deal', 'DEALT'), ('dig', 'DUG'), ('rise', 'ROSE'), ('pay', 'PAID'),
-            ('say', 'SAID'), ('find', 'FOUND'), ('get', 'GOT'), ('give', 'GIVEN'),
-            ('make', 'MADE'), ('take', 'TOOK'), ('come', 'CAME'), ('become', 'BECOME'),
-            ('become', 'BECAME'), ('build', 'BUILT'), ('buy', 'BOUGHT'), ('catch', 'CAUGHT'),
-            ('teach', 'TAUGHT'), ('think', 'THOUGHT'), ('bring', 'BROUGHT'), ('fight', 'FOUGHT'),
-            # 名词→复数
-            ('battery', 'BATTERIES'), ('harmony', 'HARMONIES'), ('injury', 'INJURIES'),
-            ('knife', 'KNIVES'), ('mess', 'MESSES'), ('society', 'SOCIETIES'),
-            ('dynasty', 'DYNASTIES'), ('economy', 'ECONOMIES'), ('ability', 'ABILITIES'),
-            ('bacteria', 'BACTERIA'), ('pottery', 'POTTERIES'), ('responsibility', 'RESPONSIBILITIES'),
-            ('family', 'FAMILIES'), ('dictionary', 'DICTIONARIES'), ('activity', 'ACTIVITIES'),
-            ('possibility', 'POSSIBILITIES'), ('nationality', 'NATIONALITIES'),
-            # 名词→形容词
-            ('tradition', 'TRADITIONAL'), ('music', 'MUSICAL'), ('nature', 'NATURAL'),
-            ('culture', 'CULTURAL'), ('history', 'HISTORICAL'), ('science', 'SCIENTIFIC'),
-            ('education', 'EDUCATIONAL'), ('medicine', 'MEDICAL'), ('industry', 'INDUSTRIAL'),
-            ('politics', 'POLITICAL'), ('economy', 'ECONOMIC'), ('geography', 'GEOGRAPHICAL'),
-            ('social', 'SOCIALIST'), ('decoration', 'DECORATIVE'), ('disaster', 'DISASTROUS'),
-        ]
+        # 使用加载的核心词汇转换列表
+        common_transformations = self.core_transformations
 
         # 检查是否在常见转换列表中
         is_common = (hint.lower(), answer.upper()) in common_transformations
@@ -537,13 +536,33 @@ class ExerciseChecker:
 if __name__ == '__main__':
     import sys
 
-    checker = ExerciseChecker(use_llm=True)
+    # 解析命令行参数
+    grade = None
+    fix_mode = False
+    input_file = 'allvol/data/exercises_grade8_zhongkao_fixed.json'
+    
+    for arg in sys.argv[1:]:
+        if arg == '--fix':
+            fix_mode = True
+        elif arg.startswith('--grade='):
+            grade = arg.split('=')[1]  # grade7 或 grade8
+        elif arg.endswith('.json'):
+            input_file = arg
+    
+    # 显示配置信息
+    print(f"📚 核心词汇检查器")
+    print(f"  年级: {grade if grade else '所有年级'}")
+    print(f"  输入文件: {input_file}")
+    print(f"  模式: {'修复' if fix_mode else '检查'}")
+    print("=" * 50)
+    
+    checker = ExerciseChecker(use_llm=True, grade=grade)
 
-    if len(sys.argv) > 1 and sys.argv[1] == '--fix':
+    if fix_mode:
         # 自动修复模式
         print("🔧 自动修复模式\n" + "="*50)
 
-        with open('allvol/data/exercises_grade8_zhongkao_fixed.json', 'r', encoding='utf-8') as f:
+        with open(input_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
         fixed_count = 0
@@ -563,18 +582,19 @@ if __name__ == '__main__':
         print(f"🎉 修复完成！共修复 {fixed_count} 道题")
 
         # 保存
-        with open('allvol/data/exercises_grade8_zhongkao_fixed.json', 'w', encoding='utf-8') as f:
+        with open(input_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        print(f"✅ 已保存到 allvol/data/exercises_grade8_zhongkao_fixed.json")
+        print(f"✅ 已保存到 {input_file}")
 
     else:
         # 只检查模式
-        results = checker.check_file('allvol/data/exercises_grade8_zhongkao_fixed.json')
+        results = checker.check_file(input_file)
         report = checker.generate_fix_suggestions(results)
 
         print(report)
 
         # 保存报告
-        with open('allvol/data/quality_report.md', 'w', encoding='utf-8') as f:
+        report_file = input_file.replace('.json', '_report.md')
+        with open(report_file, 'w', encoding='utf-8') as f:
             f.write(report)
-        print(f"\n✅ 报告已保存到 allvol/data/quality_report.md")
+        print(f"\n✅ 报告已保存到 {report_file}")
